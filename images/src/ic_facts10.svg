@@ -1,0 +1,34 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="32" cy="32" r="31.5" stroke="currentColor"/>
+<path d="M1 29L6 26L10 28L17 24L23 27L32 21L41 27L47 24L54 28L58 26L63 29" stroke="currentColor" stroke-linecap="round"/>
+<path d="M58 26L49.5 25.5" stroke="currentColor" stroke-linecap="round"/>
+<path d="M6 26L14 25.5" stroke="currentColor" stroke-linecap="round"/>
+<path d="M1.5 39.5H62" stroke="currentColor" stroke-linecap="round"/>
+<path d="M1 38H63" stroke="currentColor" stroke-linecap="round"/>
+<path d="M1 32H63" stroke="currentColor" stroke-linecap="round"/>
+<path d="M39 29H25L28 27.0006L36 27L39 29Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M22 29H12L15.1429 27.0006L18.8571 27L22 29Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M52 29H42L45.1429 27.0006L48.8571 27L52 29Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M56 29H60" stroke="currentColor" stroke-linecap="round"/>
+<path d="M4 29H8" stroke="currentColor" stroke-linecap="round"/>
+<path d="M30 25H34" stroke="currentColor" stroke-linecap="round"/>
+<path d="M19 32V38" stroke="currentColor" stroke-linecap="round"/>
+<path d="M15 32V38" stroke="currentColor" stroke-linecap="round"/>
+<path d="M23 32V38" stroke="currentColor" stroke-linecap="round"/>
+<path d="M27 32V38" stroke="currentColor" stroke-linecap="round"/>
+<path d="M31 32V38" stroke="currentColor" stroke-linecap="round"/>
+<path d="M35 32V38" stroke="currentColor" stroke-linecap="round"/>
+<path d="M39 32V38" stroke="currentColor" stroke-linecap="round"/>
+<path d="M43 32V38" stroke="currentColor" stroke-linecap="round"/>
+<path d="M47 32V38" stroke="currentColor" stroke-linecap="round"/>
+<path d="M51 32V38" stroke="currentColor" stroke-linecap="round"/>
+<path d="M55 32V38" stroke="currentColor" stroke-linecap="round"/>
+<path d="M60 32V38" stroke="currentColor" stroke-linecap="round"/>
+<path d="M4 32V38" stroke="currentColor" stroke-linecap="round"/>
+<path d="M58 32V38" stroke="currentColor" stroke-linecap="round"/>
+<path d="M2 32V38" stroke="currentColor" stroke-linecap="round"/>
+<path d="M62 32V38" stroke="currentColor" stroke-linecap="round"/>
+<path d="M6 32V38" stroke="currentColor" stroke-linecap="round"/>
+<path d="M9 32V38" stroke="currentColor" stroke-linecap="round"/>
+<path d="M12 32V38" stroke="currentColor" stroke-linecap="round"/>
+</svg>

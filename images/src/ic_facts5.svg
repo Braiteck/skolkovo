@@ -1,0 +1,13 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="32" cy="32" r="31.5" stroke="currentColor"/>
+<rect x="24" y="11" width="16" height="42" rx="2" stroke="currentColor"/>
+<circle cx="32" cy="19" r="4.5" stroke="currentColor"/>
+<circle cx="32" cy="32" r="4.5" stroke="currentColor"/>
+<circle cx="32" cy="45" r="4.5" stroke="currentColor"/>
+<path d="M40 15H45C44.8333 17 43.6 21.4 40 23" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M40 28H45C44.8333 30 43.6 34.4 40 36" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M40 41H45C44.8333 43 43.6 47.4 40 49" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M24 15H19C19.1667 17 20.4 21.4 24 23" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M24 28H19C19.1667 30 20.4 34.4 24 36" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M24 41H19C19.1667 43 20.4 47.4 24 49" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

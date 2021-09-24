@@ -1,0 +1,798 @@
+@media print, (max-width: 767px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+
+
+
+    /*--------------
+        Fancybox
+    --------------*/
+    .fancybox__slide
+    {
+        padding: 20px;
+    }
+
+
+
+    /*----------------
+        Pagination
+    ----------------*/
+    .pagination > * + *
+    {
+        margin-left: 12px;
+    }
+
+
+
+    /*------------
+        Loader
+    ------------*/
+    .loader
+    {
+        width: 320px;
+        height: 320px;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block h2
+    {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .text_block .columns
+    {
+        column-gap: 0;
+        column-count: 1;
+    }
+
+
+
+    /*------------------
+        Article info
+    ------------------*/
+    .article_info
+    {
+        padding: 0;
+    }
+
+
+    .article_info .head
+    {
+        padding-left: 60px;
+    }
+
+    .article_info .head .title
+    {
+        font-size: 26px;
+        line-height: 28px;
+    }
+
+    .article_info .head .author
+    {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+
+
+    /*----------------
+        City rules
+    ----------------*/
+    .city_rules .block_title
+    {
+        font-size: 26px;
+        line-height: 28px;
+
+        padding-left: 60px;
+    }
+
+
+    .city_rules .block_desc
+    {
+        font-size: 18px;
+        line-height: 22px;
+
+        padding-left: 60px;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .block_title
+    {
+        font-size: 26px;
+        line-height: 28px;
+    }
+
+
+    .contacts_info .data,
+    .contacts_info .feedback
+    {
+        padding-left: 60px;
+    }
+
+
+
+    /*----------------
+        Event info
+    ----------------*/
+    .event_info .head
+    {
+        width: calc(100% - 104px);
+        padding-left: 60px;
+    }
+
+    .event_info .head .title
+    {
+        font-size: 26px;
+        line-height: 28px;
+    }
+
+    .event_info .head .desc
+    {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+
+    .event_info .images
+    {
+        margin-bottom: 24px;
+    }
+
+    .event_info .images .row
+    {
+        position: relative;
+
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 48px);
+        max-width: calc(100% + 48px);
+        margin-right: -24px;
+        margin-left: -24px;
+
+        white-space: nowrap;
+
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+    .event_info .images .row::-webkit-scrollbar
+    {
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+    .event_info .images .row::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .event_info .images .row > *
+    {
+        display: inline-block;
+
+        width: 290px;
+        height: auto;
+        margin: 0;
+        padding-bottom: 184px;
+
+        vertical-align: top;
+    }
+
+    .event_info .images .row > * + *
+    {
+        margin-left: 1px;
+    }
+
+
+    .event_info .features
+    {
+        margin-top: 0;
+    }
+
+    .event_info .features > .item,
+    .event_info .features > .group
+    {
+        width: calc(50% - 12px);
+        margin-top: 24px;
+    }
+
+
+
+    /*-----------
+        Facts
+    -----------*/
+    .facts .block_title
+    {
+        font-size: 26px;
+        line-height: 28px;
+
+        width: 100%;
+        padding-left: 60px;
+    }
+
+
+    .facts .next_link
+    {
+        display: none;
+    }
+
+
+    .facts .row
+    {
+        margin-bottom: -20px;
+        margin-left: 0;
+    }
+
+    .facts .row > *
+    {
+        width: 100%;
+        margin-bottom: 20px;
+        margin-left: 0;
+    }
+
+
+    .facts .swiper-container
+    {
+        padding-bottom: 0;
+    }
+
+
+    .facts .head .icon + *
+    {
+        font-size: 26px;
+        line-height: 28px;
+    }
+
+
+
+    /*-------------
+        Gallery
+    -------------*/
+    .gallery
+    {
+        padding-bottom: 0;
+    }
+
+    .gallery .block_title
+    {
+        font-size: 26px;
+        line-height: 28px;
+
+        padding-left: 60px;
+    }
+
+
+
+    /*------------------
+        Home section
+    ------------------*/
+    .home_section
+    {
+        margin-bottom: -40px;
+    }
+
+    .home_section .info
+    {
+        margin-top: 52px;
+    }
+
+
+    .home_section .title
+    {
+        font-size: 40px;
+    }
+
+
+
+    /*-----------------
+        Objects map
+    -----------------*/
+    .objects_map
+    {
+        height: 433px;
+        margin-bottom: -40px !important;
+    }
+
+
+
+    /*-----------------
+        Object info
+    -----------------*/
+    .object_info .head
+    {
+        width: 100%;
+        margin-bottom: 20px;
+        padding-top: 56px;
+        padding-left: 0;
+    }
+
+    .object_info .head .title
+    {
+        font-size: 26px;
+        line-height: 28px;
+    }
+
+
+    .object_info .swiper-container
+    {
+        padding-bottom: 0;
+    }
+
+
+    .object_info .features
+    {
+        margin-top: 0;
+    }
+
+    .object_info .features > .item,
+    .object_info .features > .group,
+    .object_info .features > .btns.right,
+    .object_info .features > .btns,
+    .object_info .features > .btns.left
+    {
+        width: 100%;
+        margin-top: 24px;
+    }
+
+    .object_info .features > .btns.left
+    {
+        margin-left: 0;
+    }
+
+    .object_info .features .build_route_link
+    {
+        margin-top: 0;
+    }
+
+    .object_info .features .rent_btn + .build_route_link
+    {
+        margin-top: 10px;
+    }
+
+
+
+    /*---------------------
+        Our communities
+    ---------------------*/
+    .our_communities .block_title
+    {
+        font-size: 26px;
+        line-height: 28px;
+
+        padding-left: 60px;
+    }
+
+    .our_communities .block_desc
+    {
+        padding-left: 60px;
+    }
+
+
+    .our_communities .socials .col
+    {
+        width: 100%;
+    }
+
+    .our_communities .socials .col + .col
+    {
+        margin-top: 24px;
+    }
+
+    .our_communities .socials .title
+    {
+        font-size: 16px;
+
+        margin-bottom: 8px;
+    }
+
+
+    .our_communities .categories
+    {
+        margin-top: 52px;
+    }
+
+    .our_communities .categories .row > *
+    {
+        width: calc(33.333% - 20px);
+    }
+
+
+
+    /*---------------
+        Residents
+    ---------------*/
+    .residents
+    {
+        margin-bottom: -40px !important;
+    }
+
+
+    .residents .item
+    {
+        width: 100vw;
+    }
+
+
+    .residents .item .data
+    {
+        height: 216px;
+        padding: 20px 20px 60px;
+    }
+
+    .residents .item .data .name
+    {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+
+
+    /*----------------
+        Route info
+    ----------------*/
+    .route_info .head
+    {
+        width: 100%;
+        margin-bottom: 28px;
+        padding-top: 56px;
+        padding-left: 0;
+    }
+
+    .route_info .head .block_title
+    {
+        font-size: 26px;
+        line-height: 28px;
+    }
+
+    .route_info .head .desc
+    {
+        font-size: 18px;
+        line-height: 22px;
+
+        width: 100%;
+        margin-right: 0;
+    }
+
+
+    .route_info .swiper-container
+    {
+        padding-bottom: 0;
+    }
+
+
+    .route_info .col_left
+    {
+        width: 100%;
+    }
+
+    .route_info .col_right
+    {
+        margin-top: 24px;
+    }
+
+
+    .route_info .map
+    {
+        width: calc(100% - 220px);
+        margin-left: auto;
+    }
+
+
+    .route_info .image
+    {
+        position: relative;
+        bottom: 0;
+
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 24px;
+    }
+
+    .route_info .image div
+    {
+        width: 100%;
+    }
+
+
+    .route_info .build_link
+    {
+        margin-bottom: 24px;
+    }
+
+
+
+    /*------------
+        Search
+    ------------*/
+    .search
+    {
+        padding-bottom: 0;
+    }
+
+
+    .search .block_title
+    {
+        font-size: 26px;
+        line-height: 28px;
+
+        padding-left: 60px;
+    }
+
+
+    .search .result .item + .item
+    {
+        margin-top: 24px;
+    }
+
+
+
+    /*------------------
+        Terms of use
+    ------------------*/
+    .terms_of_use
+    {
+        padding-bottom: 0;
+    }
+
+
+    .terms_of_use .block_title
+    {
+        font-size: 26px;
+        line-height: 28px;
+
+        margin-bottom: 24px;
+        padding-left: 60px;
+    }
+
+
+
+    /*------------------
+        Things to do
+    ------------------*/
+    .things_to_do
+    {
+        margin-bottom: -40px !important;
+    }
+
+
+    .things_to_do .block_desc
+    {
+        padding-left: 60px;
+    }
+
+
+    .things_to_do .item
+    {
+        width: 100vw;
+    }
+
+
+    .things_to_do .item .data
+    {
+        height: 216px;
+        padding: 20px 20px 60px;
+    }
+
+    .things_to_do .item .data .name
+    {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+
+
+    /*-----------
+        Stats
+    -----------*/
+    .stats .block_title
+    {
+        font-size: 26px;
+        line-height: 28px;
+
+        padding-left: 60px;
+    }
+
+
+    .stats .stats_info
+    {
+        height: auto;
+    }
+
+
+    .stats .stats_info1 .item
+    {
+        position: relative;
+
+        width: 100%;
+    }
+
+    .stats .stats_info1 .item .title
+    {
+        font-size: 28px;
+        line-height: 30px;
+    }
+
+    .stats .stats_info1 .item .desc
+    {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+
+    .stats .stats_info1 .item2
+    {
+        left: 0;
+
+        margin-top: 24px;
+        margin-left: 0;
+        padding-left: 68px;
+    }
+
+    .stats .stats_info1 .item2 .info
+    {
+        width: calc(100% - 179px);
+    }
+
+    .stats .stats_info1 .item2 .desc br
+    {
+        display: none;
+    }
+
+
+    .stats .stats_info1 .item3
+    {
+        top: 0;
+        left: 0;
+
+        margin-top: 24px;
+    }
+
+
+
+    .stats .stats_info2 .item
+    {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+
+    .stats .stats_info2 .architects
+    {
+        width: 100%;
+        margin-top: 24px;
+    }
+
+
+
+    .stats .stats_info3 .item1
+    {
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .stats .stats_info3 .item1 .thumb
+    {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .stats .stats_info3 .item1 .info
+    {
+        width: 100%;
+
+        order: 2;
+    }
+
+    .stats .stats_info3 .item1 .title
+    {
+        width: 100%;
+
+        justify-content: center;
+    }
+
+
+    .stats .stats_info3 .item2
+    {
+        width: 100%;
+        margin-top: 40px;
+
+        text-align: center;
+    }
+
+    .stats .stats_info3 .item2 .thumb
+    {
+        margin-right: auto;
+        margin-bottom: 16px;
+        margin-left: auto;
+    }
+
+    .stats .stats_info3 .item2 .info
+    {
+        width: 100%;
+        max-width: 100%;
+
+        order: 2;
+    }
+
+    .stats .stats_info3 .item .title
+    {
+        font-size: 32px;
+        line-height: 34px;
+
+        width: 100%;
+
+        text-align: left;
+
+        justify-content: center;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer
+    {
+        margin-top: 40px;
+        padding: 30px 0 50px;
+
+        border-top: 1px solid var(--text_color);
+    }
+
+
+    footer .cont
+    {
+        padding: 0 44px;
+    }
+
+
+    footer .socials
+    {
+        width: 100%;
+        margin: 0;
+
+        order: 0;
+        justify-content: center;
+    }
+
+
+    footer .copyright,
+    footer .links
+    {
+        width: 100%;
+        margin-top: 30px;
+
+        text-align: center;
+    }
+
+    footer .creator
+    {
+        display: flex;
+
+        width: 100%;
+        margin-top: 30px;
+
+        text-align: center;
+
+        justify-content: center;
+        align-items: flex-start;
+        align-content: flex-start;
+        flex-wrap: wrap;
+    }
+}

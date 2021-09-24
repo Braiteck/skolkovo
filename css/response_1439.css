@@ -1,0 +1,956 @@
+@media print, (max-width: 1439px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    .content
+    {
+        padding: 104px 40px 98px 58px;
+    }
+
+
+    header.relative ~ .content
+    {
+        padding-top: 20px;
+    }
+
+
+
+    /*----------
+        Tabs
+    ----------*/
+    .tabs
+    {
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 98px);
+        margin: 0 -40px 23px -58px;
+        padding: 0 40px 0 58px;
+
+        white-space: nowrap;
+
+        scrollbar-color: transparent transparent;
+        scrollbar-width: thin;
+    }
+
+    .tabs::-webkit-scrollbar
+    {
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent;
+    }
+
+    .tabs::-webkit-scrollbar-thumb
+    {
+        background-color: transparent;
+    }
+
+    .tabs button
+    {
+        display: inline-block;
+
+        vertical-align: top;
+        white-space: normal;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header
+    {
+        padding-top: 20px;
+    }
+
+
+    header .menu .item + .item
+    {
+        margin-left: 52px;
+    }
+
+
+    header .menu_btn
+    {
+        margin-left: 80px;
+    }
+
+
+
+    #menu .cont
+    {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 170px;
+    }
+
+
+    #menu .col_left
+    {
+        width: calc(100% - 333px);
+    }
+
+
+    #menu .links + .links
+    {
+        margin-top: 32px;
+        padding-top: 32px;
+    }
+
+
+    #menu .col_left .title,
+    #menu .col_right .title
+    {
+        font-size: 20px;
+        line-height: 22px;
+
+        margin-bottom: 12px;
+    }
+
+
+    #menu .links .columns
+    {
+        column-gap: 32px;
+    }
+
+
+    #menu .links .items
+    {
+        margin-top: 16px;
+    }
+
+    #menu .links .items a
+    {
+        font-size: 15px;
+        line-height: 17px;
+
+        padding: 4px;
+    }
+
+    #menu .links .items a span
+    {
+        width: calc(100% - 40px);
+    }
+
+
+    #menu .col_right
+    {
+        width: 293px;
+        margin-top: 44px;
+        padding: 24px;
+    }
+
+
+    #menu .location .val
+    {
+        font-size: 16px;
+        line-height: 22px;
+
+        margin-top: 16px;
+    }
+
+
+    #menu .phones
+    {
+        margin-top: 65px;
+    }
+
+    #menu .subscribe
+    {
+        margin-top: 27px;
+    }
+
+
+
+    /*-------------
+        Sidebar
+    -------------*/
+    aside
+    {
+        height: calc(100% - 118px);
+        padding-top: 24px;
+    }
+
+
+    aside .toggle_btn
+    {
+        top: 31px;
+    }
+
+
+    aside .logo
+    {
+        padding-top: 20px;
+    }
+
+
+    aside .socials
+    {
+        display: none;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block
+    {
+        line-height: 19px;
+    }
+
+
+    .text_block .columns
+    {
+        column-gap: 30px;
+    }
+
+
+
+    /*------------------
+        Home section
+    ------------------*/
+    .home_section .info
+    {
+        margin-top: 132px;
+    }
+
+
+
+    /*----------------
+        About info
+    ----------------*/
+    .about_info .block_title
+    {
+        margin-bottom: 10px;
+    }
+
+
+    .about_info .data .image
+    {
+        width: 548px;
+        max-width: 100%;
+        height: 212px;
+    }
+
+
+    .about_info .data .text_block
+    {
+        margin-top: 20px;
+    }
+
+
+    aside.mini ~ .content .about_info
+    {
+        width: 850px;
+    }
+
+
+
+    /*------------------
+        Article info
+    ------------------*/
+    .article_info
+    {
+        padding-bottom: 32px;
+    }
+
+
+    .article_info .text_block
+    {
+        width: 550px;
+    }
+
+
+    .article_info .share
+    {
+        display: block;
+
+        margin-top: 15px;
+        margin-left: 43px;
+    }
+
+    .article_info .share .items
+    {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+
+
+    /*----------------
+        City rules
+    ----------------*/
+    .city_rules .slide img
+    {
+        max-height: 339px;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info
+    {
+        padding-top: 23px;
+    }
+
+
+    .contacts_info .block_title
+    {
+        margin-bottom: 32px;
+    }
+
+
+    .contacts_info .feedback
+    {
+        margin-left: 56px;
+    }
+
+
+    .contacts_info .map_wrap
+    {
+        display: none;
+    }
+
+
+
+    /*----------------
+        Event info
+    ----------------*/
+    .event_info .head
+    {
+        margin-bottom: 20px;
+    }
+
+
+    .event_info .images
+    {
+        margin-bottom: 20px;
+    }
+
+    .event_info .images .row > *
+    {
+        height: 192px;
+        padding-bottom: 0;
+    }
+
+
+    .event_info .text_block
+    {
+        width: 419px;
+    }
+
+
+    .event_info .features
+    {
+        width: calc(100% - 452px);
+        padding: 0;
+    }
+
+
+
+    /*-----------
+        Facts
+    -----------*/
+    .facts .row > *
+    {
+        width: calc(33.333% - 30px);
+    }
+
+
+    .facts .item a .icon > *
+    {
+        width: 50px;
+        height: 50px;
+    }
+
+    .facts .item a .icon + *
+    {
+        width: calc(100% - 70px);
+    }
+
+
+
+    .facts .head
+    {
+        margin-bottom: 20px;
+    }
+
+
+    .facts .head .icon > *
+    {
+        width: 50px;
+        height: 50px;
+    }
+
+    .facts .head .icon + *
+    {
+        width: calc(100% - 70px);
+    }
+
+
+    .facts .count
+    {
+        top: 10px;
+    }
+
+
+    .facts .data .image
+    {
+        width: 430px;
+        height: 168px;
+    }
+
+
+    .facts .data .text_block
+    {
+        margin-top: 20px;
+    }
+
+
+
+    /*-------------
+        Gallery
+    -------------*/
+    .gallery .block_title
+    {
+        margin-bottom: 24px;
+    }
+
+
+
+    .gallery .hor_scroll > *
+    {
+        width: 380px;
+    }
+
+
+
+    .gallery .masonry_wrap
+    {
+        width: calc(268vw + 98px) !important;
+        height: 234px;
+    }
+
+
+
+    .gallery .text_block
+    {
+        margin-top: 20px;
+    }
+
+
+
+    .gallery_slider
+    {
+        padding-top: 11px;
+        padding-right: 187px;
+    }
+
+    .gallery_slider .thumbs
+    {
+        display: none;
+    }
+
+    .gallery_slider .big .slide
+    {
+        height: 403px;
+    }
+
+
+
+    /*-----------------
+        Objects map
+    -----------------*/
+    .objects_map
+    {
+        height: 420px;
+    }
+
+
+
+    /*-----------------
+        Object info
+    -----------------*/
+    .object_info .head .map_wrap
+    {
+        display: none;
+    }
+
+
+    .object_info .count
+    {
+        top: 11px;
+    }
+
+
+    .object_info .images
+    {
+        margin-bottom: 20px;
+    }
+
+    .object_info .images img
+    {
+        height: 160px;
+    }
+
+
+    .object_info .data
+    {
+        width: 304px;
+    }
+
+
+    .object_info .features
+    {
+        width: calc(100% - 337px);
+    }
+
+
+    .object_info .features > .item,
+    .object_info .features > .group,
+    .object_info .features > .btns.right
+    {
+        width: calc(50% - 12px);
+    }
+
+
+    .object_info .features .btns
+    {
+        margin-top: 16px;
+    }
+
+    .object_info .features .build_route_link
+    {
+        margin-top: 10px;
+    }
+
+    .object_info .features .btns.big_margin
+    {
+        margin-top: 30px;
+    }
+
+    .object_info .features > .btns.right
+    {
+        margin-left: auto;
+    }
+
+
+
+    /*---------------------
+        Our communities
+    ---------------------*/
+    .our_communities .socials
+    {
+        margin-top: 18px;
+    }
+
+    .our_communities .socials .col + .col
+    {
+        margin-left: 114px;
+    }
+
+    .our_communities .socials .title
+    {
+        font-size: 18px;
+        line-height: 22px;
+
+        margin-bottom: 23px;
+    }
+
+    .our_communities .socials .items a + a
+    {
+        margin-left: 40px;
+    }
+
+
+    .our_communities .categories
+    {
+        margin-top: 52px;
+    }
+
+    .our_communities .categories .row
+    {
+        margin-bottom: -20px;
+        margin-left: -20px;
+    }
+
+    .our_communities .categories .row > *
+    {
+        width: calc(16.666% - 20px);
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
+
+
+    /*---------------
+        Residents
+    ---------------*/
+    .residents
+    {
+        padding-top: 32px;
+    }
+
+
+    .residents .next_link
+    {
+        top: -11px;
+    }
+
+
+    .residents .item .data
+    {
+        height: 201px;
+    }
+
+
+    .residents .row
+    {
+        grid-template-rows: 1fr 1fr;
+    }
+
+
+
+    /*----------------
+        Route info
+    ----------------*/
+    .route_info .head
+    {
+        margin-bottom: 23px;
+    }
+
+    .route_info .head .desc
+    {
+        width: calc(100% + 210px);
+        margin-right: -210px;
+    }
+
+
+    .route_info .col_left
+    {
+        display: flex;
+
+        width: 423px;
+        max-width: 100%;
+        padding: 0;
+
+        justify-content: flex-start;
+        align-items: stretch;
+        align-content: stretch;
+        flex-wrap: wrap;
+    }
+
+
+    .route_info .col_right
+    {
+        position: relative;
+
+        width: 100%;
+        margin-top: 30px;
+    }
+
+
+    .route_info .step
+    {
+        width: 200px;
+        height: 189px;
+    }
+
+    .route_info .step .number
+    {
+        line-height: 112px;
+
+        margin-right: -20px;
+        margin-left: -32px;
+    }
+
+    .route_info .step .name
+    {
+        width: calc(100% - 48px);
+        margin-top: 7px;
+    }
+
+
+    .route_info .step .icon
+    {
+        width: 100%;
+        margin-top: -24px;
+    }
+
+
+    .route_info .map
+    {
+        width: 195px;
+        height: 189px;
+        margin-left: auto;
+
+        order: 2;
+    }
+
+
+    .route_info .image
+    {
+        position: absolute;
+        right: 0;
+        bottom: 100%;
+
+        width: calc(100% - 428px);
+        margin-bottom: 30px;
+    }
+
+    .route_info .image div
+    {
+        width: 365px;
+        max-width: 100%;
+        height: 189px;
+    }
+
+
+    .route_info .text_block
+    {
+        width: 100%;
+    }
+
+
+    .route_info .build_link
+    {
+        top: auto;
+        bottom: 100%;
+        left: 0;
+
+        margin-bottom: 30px;
+    }
+
+
+
+    /*------------
+        Search
+    ------------*/
+    .search
+    {
+        width: 653px;
+    }
+
+
+    .search .result
+    {
+        margin-top: 24px;
+    }
+
+
+    .search .result .item .desc
+    {
+        font-size: 15px;
+
+        margin-top: 5px;
+    }
+
+
+
+    /*-----------
+        Stats
+    -----------*/
+    .stats .stats_info
+    {
+        height: 360px;
+    }
+
+
+    .stats .stats_info1 .item1 .thumb
+    {
+        width: 242px;
+        height: 242px;
+    }
+
+
+    .stats .stats_info1 .item2
+    {
+        margin-left: -272px;
+    }
+
+    .stats .stats_info1 .item2 .thumb
+    {
+        width: 173px;
+        height: 173px;
+    }
+
+    .stats .stats_info1 .item2 .info
+    {
+        margin-left: 10px;
+    }
+
+
+    .stats .stats_info1 .item3
+    {
+        top: 0;
+    }
+
+    .stats .stats_info1 .item3 .thumb
+    {
+        width: 211px;
+        height: 211px;
+    }
+
+    .stats .stats_info1 .item3 .info
+    {
+        margin-left: 0;
+    }
+
+
+
+    .stats .stats_info2 .item
+    {
+        margin-right: -24px;
+        padding-right: 116px;
+        padding-bottom: 64px;
+    }
+
+    .stats .stats_info2 .item .thumb
+    {
+        width: 252px;
+        height: 252px;
+    }
+
+    .stats .stats_info2 .item .val
+    {
+        right: 168px;
+        bottom: 52px;
+    }
+
+    .stats .stats_info2 .item .desc
+    {
+        text-align: left;
+    }
+
+
+    .stats .stats_info2 .architects
+    {
+        width: 480px;
+        margin-top: -52px;
+    }
+
+
+    .stats .stats_info2 .architects .persons
+    {
+        margin-top: 21px;
+    }
+
+    .stats .stats_info2 .architects .persons .photo
+    {
+        width: 58px;
+        height: 58px;
+    }
+
+    .stats .stats_info2 .architects .persons .name
+    {
+        margin-right: -14px;
+        margin-left: -14px;
+    }
+
+
+
+    .stats .stats_info3 .item1
+    {
+        margin-top: -32px;
+    }
+
+    .stats .stats_info3 .item1 .thumb
+    {
+        width: 214px;
+        height: 214px;
+        margin-left: 30px;
+    }
+
+
+    .stats .stats_info3 .item2
+    {
+        margin-top: -20px;
+    }
+
+    .stats .stats_info3 .item2 .thumb
+    {
+        width: 184px;
+        height: 184px;
+        margin-right: 30px;
+    }
+
+    .stats .stats_info3 .item2 .info
+    {
+        max-width: calc(100% - 214px);
+        padding-top: 32px;
+    }
+
+    .stats .stats_info3 .item2 .desc
+    {
+        width: 496px;
+        max-width: 100%;
+    }
+
+
+
+    /*------------------
+        Terms of use
+    ------------------*/
+    .terms_of_use
+    {
+        width: 653px;
+        padding-top: 20px;
+        padding-bottom: 32px;
+    }
+
+
+    .terms_of_use .block_title
+    {
+        margin-bottom: 32px;
+    }
+
+
+
+    /*------------------
+        Things to do
+    ------------------*/
+    .things_to_do .item .data
+    {
+        height: 201px;
+        padding-top: 16px;
+    }
+
+
+    .things_to_do .row
+    {
+        grid-template-rows: 1fr 1fr;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer
+    {
+        padding: 20px 0;
+    }
+
+    .menu_open footer
+    {
+        display: none;
+    }
+
+
+    footer .socials a
+    {
+        display: none;
+    }
+
+
+
+    footer .links
+    {
+        margin-left: 82px;
+    }
+}

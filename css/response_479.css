@@ -1,0 +1,553 @@
+@media (max-width: 479px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+
+
+
+    /*--------------
+        Fancybox
+    --------------*/
+    .fancybox__slide
+    {
+        padding: 16px;
+    }
+
+
+
+    /*----------------
+        Pagination
+    ----------------*/
+    .pagination .first,
+    .pagination .last
+    {
+        display: none;
+    }
+
+
+    .pagination > * + *
+    {
+        margin-left: 8px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+
+
+
+    /*-------------
+        Sidebar
+    -------------*/
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block h2
+    {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+
+
+    /*------------------
+        Article info
+    ------------------*/
+    .article_info .head .title
+    {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+
+    .article_info .text_block .images .row
+    {
+        position: relative;
+
+        display: block;
+        overflow: auto;
+
+        white-space: nowrap;
+
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+    .article_info .text_block .images .row::-webkit-scrollbar
+    {
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+    .article_info .text_block .images .row::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .article_info .text_block .images .row > *
+    {
+        display: inline-block;
+
+        width: 290px;
+        padding-bottom: 184px;
+
+        vertical-align: top;
+    }
+
+    .article_info .text_block .images .row > * + *
+    {
+        margin-left: 1px;
+    }
+
+
+
+    /*----------------
+        City rules
+    ----------------*/
+    .city_rules .block_title
+    {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .block_title
+    {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+
+    .contacts_info .data .item
+    {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+
+    .contacts_info .feedback
+    {
+        padding-left: 0;
+    }
+
+
+
+    /*----------------
+        Event info
+    ----------------*/
+    .event_info .head
+    {
+        width: 100%;
+        padding-top: 56px;
+        padding-left: 0;
+    }
+
+    .event_info .head .title
+    {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .event_info .head .desc
+    {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+
+    .event_info .features > .item,
+    .event_info .features > .group
+    {
+        width: 100%;
+    }
+
+
+
+    /*-----------
+        Facts
+    -----------*/
+    .facts .block_title
+    {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+
+    .facts .head .icon + *
+    {
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+
+
+    /*-------------
+        Gallery
+    -------------*/
+    .gallery .block_title
+    {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+
+    .gallery .hor_scroll
+    {
+        padding: 0;
+    }
+
+    .gallery .hor_scroll > *
+    {
+        width: 340px;
+    }
+
+
+    .gallery .album_link .date
+    {
+        font-size: 15px;
+        line-height: 19px;
+
+        padding: 0 24px;
+    }
+
+    .gallery .album_link .name
+    {
+        padding: 0 24px;
+    }
+
+
+
+    /*------------------
+        Home section
+    ------------------*/
+    .home_section .info
+    {
+        margin-top: 0;
+    }
+
+
+    .home_section .title
+    {
+        font-size: 34px;
+    }
+
+
+
+    /*-----------------
+        Object info
+    -----------------*/
+    .object_info .head .title
+    {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+
+
+    /*---------------------
+        Our communities
+    ---------------------*/
+    .our_communities .block_title
+    {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .our_communities .block_desc
+    {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+    .our_communities .categories .row > *
+    {
+        width: calc(50% - 20px);
+    }
+
+
+
+    /*---------------
+        Residents
+    ---------------*/
+    .residents .row
+    {
+        grid-template-rows: 1fr;
+    }
+
+
+    .residents .item
+    {
+        align-items: flex-start;
+        align-content: flex-start;
+    }
+
+    .residents .item .thumb
+    {
+        width: 100%;
+        height: 276px;
+    }
+
+    .residents .item .data
+    {
+        width: 100%;
+        height: 180px;
+        padding: 24px 24px 60px;
+
+        order: 2;
+    }
+
+
+
+    /*----------------
+        Route info
+    ----------------*/
+    .route_info .head .block_title
+    {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+
+    .route_info .step
+    {
+        width: 100%;
+    }
+
+
+    .route_info .map
+    {
+        width: 100%;
+        height: 220px;
+        margin-bottom: 10px;
+
+        order: 0;
+    }
+
+
+
+    /*------------
+        Search
+    ------------*/
+    .search .block_title
+    {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+
+    .search form .input
+    {
+        width: calc(100% - 100px);
+    }
+
+    .search form .submit_btn
+    {
+        width: 100px;
+    }
+
+
+
+    /*------------------
+        Terms of use
+    ------------------*/
+    .terms_of_use .block_title
+    {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+
+
+    /*------------------
+        Things to do
+    ------------------*/
+    .things_to_do .block_desc
+    {
+        width: 100%;
+        padding-top: 56px;
+        padding-left: 0;
+    }
+
+
+    .things_to_do .row
+    {
+        grid-template-rows: 1fr;
+    }
+
+
+    .things_to_do .item
+    {
+        align-items: flex-start;
+        align-content: flex-start;
+    }
+
+    .things_to_do .item .thumb
+    {
+        width: 100%;
+        height: 276px;
+    }
+
+    .things_to_do .item .data
+    {
+        width: 100%;
+        height: 220px;
+        padding: 24px 24px 60px;
+
+        order: 2;
+    }
+
+    .things_to_do .item .data .bottom
+    {
+        padding: 16px 24px;
+    }
+
+
+
+    /*-----------
+        Stats
+    -----------*/
+    .stats .block_title
+    {
+        font-size: 24px;
+        line-height: 28px;
+
+        width: 100%;
+        padding-top: 56px;
+        padding-left: 0;
+    }
+
+
+    .stats .stats_info1 .item1 .thumb
+    {
+        width: 192px;
+        height: 192px;
+    }
+
+    .stats .stats_info1 .item1 .info
+    {
+        width: calc(100% - 212px);
+        margin-left: 20px;
+    }
+
+    .stats .stats_info1 .item .title
+    {
+        font-size: 26px;
+        line-height: 28px;
+    }
+
+
+    .stats .stats_info1 .item2
+    {
+        padding-left: 0;
+    }
+
+    .stats .stats_info1 .item2 .thumb
+    {
+        width: 122px;
+        height: 122px;
+    }
+
+    .stats .stats_info1 .item2 .info
+    {
+        width: calc(100% - 128px);
+    }
+
+
+    .stats .stats_info1 .item3 .thumb
+    {
+        width: 164px;
+        height: 164px;
+    }
+
+    .stats .stats_info1 .item3 .val
+    {
+        margin-right: 8px;
+    }
+
+    .stats .stats_info1 .item3 .info
+    {
+        width: calc(100% - 168px);
+        margin-left: 4px;
+    }
+
+
+
+    .stats .stats_info2 .architects .desc
+    {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .stats .stats_info2 .architects .persons .person
+    {
+        width: calc(33.333% - 20px);
+    }
+
+
+
+    .stats .stats_info3 .item .title
+    {
+        font-size: 28px;
+        line-height: 30px;
+    }
+
+    .stats .stats_info3 .item .title span
+    {
+        font-size: 80px;
+
+        display: block;
+
+        width: 100%;
+        margin: 0;
+
+        text-align: center;
+    }
+
+
+    .stats .stats_info3 .item .title
+    {
+        text-align: center;
+    }
+
+    .stats .stats_info3 .item .title br
+    {
+        display: none;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+}

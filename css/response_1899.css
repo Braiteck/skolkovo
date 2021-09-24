@@ -1,0 +1,638 @@
+@media print, (max-width: 1899px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    .content
+    {
+        padding: 140px 40px 110px 58px;
+    }
+
+
+    aside.mini ~ .content
+    {
+        padding-left: 125px;
+    }
+
+
+    header.relative ~ .content
+    {
+        padding-top: 32px;
+        padding-bottom: 20px;
+    }
+
+
+
+    /*---------------
+        Next link
+    ---------------*/
+    .next_link
+    {
+        right: -10px;
+    }
+
+
+
+    /*----------
+        Tabs
+    ----------*/
+    .tabs button + button
+    {
+        margin-left: 50px;
+    }
+
+
+
+    /*----------------
+        Pagination
+    ----------------*/
+    .pagination
+    {
+        margin-top: 30px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .menu .item + .item
+    {
+        margin-left: 85px;
+    }
+
+
+    header .menu_btn
+    {
+        margin-left: 110px;
+    }
+
+
+
+    /*-------------
+        Sidebar
+    -------------*/
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+
+
+
+    /*------------------
+        Home section
+    ------------------*/
+    .home_section .info
+    {
+        margin-top: 264px;
+    }
+
+
+
+    /*----------------
+        About info
+    ----------------*/
+    .about_info .block_title
+    {
+        width: calc(100% - 210px);
+    }
+
+
+    .about_info .data
+    {
+        width: 1030px;
+    }
+
+
+    .about_info .data .image
+    {
+        height: 399px;
+    }
+
+
+
+    /*------------------
+        Article info
+    ------------------*/
+    .article_info
+    {
+        width: 100%;
+        padding: 0;
+    }
+
+
+    .article_info .head
+    {
+        padding-left: 0;
+    }
+
+
+    .article_info .text_block .images
+    {
+        width: calc(100vw - var(--sidebar_width));
+        margin-right: -40px;
+        margin-left: -58px;
+    }
+
+
+    .article_info .text_block
+    {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+
+    .article_info .share
+    {
+        margin-left: 48px;
+    }
+
+
+
+    /*----------------
+        City rules
+    ----------------*/
+    .city_rules .count
+    {
+        right: 0;
+    }
+
+
+    .city_rules .block_title,
+    .city_rules .block_desc
+    {
+        width: calc(100% - 210px);
+    }
+
+
+    .city_rules .slide img
+    {
+        max-height: 496px;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .map_wrap
+    {
+        width: calc(100% + 98px);
+        margin-right: -40px;
+    }
+
+
+
+    /*----------------
+        Event info
+    ----------------*/
+    .event_info .head
+    {
+        width: calc(100% - 210px);
+    }
+
+
+    .event_info .text_block
+    {
+        width: calc(50% - 96px);
+    }
+
+
+    .event_info .features
+    {
+        padding-right: 38px;
+        padding-left: 0;
+    }
+
+
+
+    /*-----------
+        Facts
+    -----------*/
+    .facts .block_title
+    {
+        width: calc(100% - 210px);
+    }
+
+
+    .facts .row
+    {
+        margin-bottom: -30px;
+        margin-left: -30px;
+    }
+
+    .facts .row > *
+    {
+        width: calc(50% - 30px);
+        margin-bottom: 30px;
+        margin-left: 30px;
+    }
+
+
+    .facts .count
+    {
+        top: 16px;
+        right: 0;
+    }
+
+
+    .facts .head
+    {
+        width: calc(100% - 210px);
+    }
+
+
+    .facts .data .image
+    {
+        height: 408px;
+    }
+
+    .facts .data .text_block
+    {
+        width: 100%;
+        margin-top: 30px;
+        margin-right: 0;
+    }
+
+
+
+    /*-------------
+        Gallery
+    -------------*/
+    .gallery .block_title
+    {
+        width: calc(100% - 210px);
+    }
+
+
+    .gallery .masonry_wrap
+    {
+        width: calc(212vw + 98px) !important;
+        margin: 0 -40px 0 -58px;
+        padding: 0 40px 0 58px;
+    }
+
+    .gallery .text_block
+    {
+        margin-top: 30px;
+    }
+
+
+
+    /*--------------------
+        Gallery slider
+    --------------------*/
+    .gallery_slider .thumbs
+    {
+        padding-right: 210px;
+    }
+
+    .gallery_slider .count
+    {
+        right: 0;
+    }
+
+
+
+    /*-----------------
+        Object info
+    -----------------*/
+    .object_info
+    {
+        width: 100%;
+    }
+
+
+    .object_info .head
+    {
+        width: calc(100% - 210px);
+    }
+
+
+    .object_info .count
+    {
+        right: 0;
+    }
+
+
+    .object_info .images img
+    {
+        height: 218px;
+    }
+
+
+    .object_info .data
+    {
+        width: 324px;
+    }
+
+    .object_info .data.big_w
+    {
+        width: 400px;
+    }
+
+
+    .object_info .features
+    {
+        width: calc(100% - 361px);
+    }
+
+    .object_info .data.big_w + .features
+    {
+        width: calc(100% - 435px);
+    }
+
+
+    .object_info .features .btns
+    {
+        display: block;
+    }
+
+    .object_info .features .build_route_link
+    {
+        margin-top: 16px;
+        margin-left: 0;
+    }
+
+
+    .object_info .features > .btns.right
+    {
+        margin-left: 40px;
+    }
+
+
+
+    /*-----------------
+        Objects map
+    -----------------*/
+    .objects_map
+    {
+        width: calc(100% + 98px);
+        margin-right: -40px;
+        margin-left: -58px;
+    }
+
+
+
+    /*----------------
+        Route info
+    ----------------*/
+    .route_info .head
+    {
+        width: calc(100% - 210px);
+    }
+
+
+    .route_info .count
+    {
+        top: 4px;
+        right: 0;
+    }
+
+
+    .route_info .col_left
+    {
+        width: 339px;
+        padding-bottom: 68px;
+    }
+
+    .route_info .col_right
+    {
+        width: calc(100% - 359px);
+    }
+
+
+    .route_info .map
+    {
+        height: 333px;
+    }
+
+
+    .route_info .image
+    {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .route_info .image div
+    {
+        height: 333px;
+        padding-bottom: 0;
+    }
+
+
+    .route_info .build_link
+    {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        margin: 0;
+    }
+
+
+
+    /*------------
+        Search
+    ------------*/
+    .search
+    {
+        width: 812px;
+    }
+
+
+
+    .search .result
+    {
+        margin-top: 30px;
+    }
+
+    .search .result .item + .item
+    {
+        margin-top: 20px;
+    }
+
+
+
+    /*-----------
+        Stats
+    -----------*/
+    .stats .count
+    {
+        right: 0;
+    }
+
+
+
+    .stats .stats_info
+    {
+        height: 602px;
+        margin-top: 0;
+    }
+
+
+    .stats .stats_info1 .item1
+    {
+        top: 0;
+    }
+
+    .stats .stats_info1 .item1 .thumb
+    {
+        width: 358px;
+        height: 358px;
+    }
+
+
+    .stats .stats_info1 .item2
+    {
+        margin-left: -272px;
+    }
+
+    .stats .stats_info1 .item2 .thumb
+    {
+        width: 282px;
+        height: 282px;
+    }
+
+
+    .stats .stats_info1 .item3
+    {
+        top: 78px;
+    }
+
+    .stats .stats_info1 .item3 .thumb
+    {
+        width: 306px;
+        height: 306px;
+    }
+
+    .stats .stats_info1 .item3 .info
+    {
+        margin-left: -10px;
+    }
+
+
+
+    .stats .stats_info2 .item
+    {
+        margin-right: -24px;
+
+        align-self: flex-end;
+    }
+
+    .stats .stats_info2 .item .thumb
+    {
+        width: 358px;
+        height: 358px;
+    }
+
+
+    .stats .stats_info2 .architects
+    {
+        width: 620px;
+        margin-right: 0;
+    }
+
+
+    .stats .stats_info2 .architects .persons .photo
+    {
+        width: 84px;
+        height: 84px;
+    }
+
+
+
+    .stats .stats_info3 .item1
+    {
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+
+    .stats .stats_info3 .item2
+    {
+        margin-top: 8px;
+        margin-right: 0;
+    }
+
+
+
+    /*---------------
+        Residents
+    ---------------*/
+    .residents .next_link
+    {
+        right: 0;
+    }
+
+
+    .residents .hor_scroll
+    {
+        width: calc(100% + 98px);
+        margin-right: -40px;
+    }
+
+
+
+    /*------------------
+        Things to do
+    ------------------*/
+    .things_to_do .next_link
+    {
+        right: 0;
+    }
+
+
+    .things_to_do .hor_scroll
+    {
+        width: calc(100% + 98px);
+        margin-right: -40px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .copyright br
+    {
+        display: block;
+    }
+
+
+    footer .links
+    {
+        display: block;
+    }
+
+    footer .links > * + *
+    {
+        margin-left: 0;
+    }
+
+
+    footer .creator
+    {
+        align-self: flex-start;
+    }
+}
