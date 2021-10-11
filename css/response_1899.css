@@ -11,7 +11,7 @@
 
     aside.mini ~ .content
     {
-        padding-left: 125px;
+        width: calc(100% - 205px);
     }
 
 
@@ -287,7 +287,7 @@
 
     .gallery .masonry_wrap
     {
-        width: calc(212vw + 98px) !important;
+        width: calc(100% + 98px);
         margin: 0 -40px 0 -58px;
         padding: 0 40px 0 58px;
     }
@@ -335,6 +335,13 @@
     }
 
 
+    .object_info .head .map_wrap
+    {
+        width: calc(100% + 210px);
+        margin-right: -210px;
+    }
+
+
     .object_info .images img
     {
         height: 218px;
@@ -354,12 +361,23 @@
 
     .object_info .features
     {
-        width: calc(100% - 361px);
+        width: calc(100% - 374px);
     }
 
     .object_info .data.big_w + .features
     {
         width: calc(100% - 435px);
+    }
+
+
+    .object_info .features > .item
+    {
+        min-width: 212px;
+    }
+
+    .object_info .features .item.right
+    {
+        min-width: 0;
     }
 
 
@@ -375,9 +393,28 @@
     }
 
 
+    .object_info .features > .btns
+    {
+        margin-right: 12px;
+        margin-left: auto;
+    }
+
     .object_info .features > .btns.right
     {
         margin-left: 40px;
+    }
+
+    .object_info .features > .btns.left
+    {
+        margin-right: 12px;
+        margin-left: auto;
+    }
+
+
+    .object_info .features .item.centered
+    {
+        margin-right: 0;
+        margin-left: auto;
     }
 
 
@@ -592,6 +629,12 @@
         margin-right: -40px;
     }
 
+    aside.mini ~ .content .residents .hor_scroll
+    {
+        width: calc(100% + 183px + 40px);
+        margin-left: -183px;
+    }
+
 
 
     /*------------------
@@ -610,6 +653,32 @@
     }
 
 
+    aside.mini ~ .content .things_to_do .hor_scroll
+    {
+        width: calc(100% + 183px + 40px);
+        margin-left: -183px;
+    }
+
+
+    .things_to_do .item .data
+    {
+        height: 216px;
+    }
+
+
+
+    /*------------------
+        Terms of use
+    ------------------*/
+    .terms_of_use
+    {
+        width: calc(755px + var(--sidebar_width) + 20px);
+        margin-right: 0;
+        margin-left: 0;
+        padding-left: calc(var(--sidebar_width) + 20px);
+    }
+
+
 
     /*------------
         Footer
@@ -623,6 +692,8 @@
     footer .links
     {
         display: block;
+
+        margin-left: 112px;
     }
 
     footer .links > * + *
@@ -633,6 +704,8 @@
 
     footer .creator
     {
+        margin-right: 40px;
+
         align-self: flex-start;
     }
 }

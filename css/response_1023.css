@@ -9,11 +9,24 @@
     }
 
 
+    .wrap
+    {
+        padding-top: 56px;
+    }
+
+    .menu_open .wrap
+    {
+        position: relative;
+
+        height: auto;
+    }
+
+
     .content,
     header.relative ~ .content
     {
         width: 100%;
-        padding: 0 24px;
+        padding: 20px 24px 0;
     }
 
     .menu_open .content
@@ -55,7 +68,7 @@
     ---------------*/
     .next_link
     {
-        top: 23px;
+        top: 0;
     }
 
 
@@ -65,7 +78,7 @@
     ------------*/
     header
     {
-        position: relative;
+        position: fixed !important;
 
         padding: 13px 0;
 
@@ -87,10 +100,7 @@
         padding: 0;
     }
 
-    .menu_open header .logo
-    {
-        display: block;
-    }
+
 
     header .logo img
     {
@@ -112,15 +122,10 @@
     }
 
 
+
     header .menu_btn
     {
-        margin-left: 16px;
-    }
-
-
-    .menu_open header .menu_btn
-    {
-        top: 0;
+        margin-left: 0;
     }
 
 
@@ -129,10 +134,30 @@
         display: flex;
     }
 
+
+
+    .menu_open header
+    {
+        background: #fff;
+    }
+
+    .menu_open header .logo
+    {
+        display: block;
+    }
+
+    .menu_open header .menu_btn
+    {
+        top: 0;
+
+        margin-left: 0;
+    }
+
     .menu_open header .mob_menu_btn
     {
         display: none;
     }
+
 
 
     #menu
@@ -186,6 +211,8 @@
         line-height: 24px;
 
         margin-bottom: 16px;
+
+        text-align: center;
     }
 
     #menu .col_left .title .icon,
@@ -251,6 +278,12 @@
     {
         margin: 0;
         padding: 8px;
+    }
+
+    #menu .subscribe .input
+    {
+        margin-right: auto;
+        margin-left: auto;
     }
 
     #menu .subscribe .submit_btn
@@ -361,12 +394,6 @@
     /*----------------
         City rules
     ----------------*/
-    .city_rules
-    {
-        padding-top: 20px;
-    }
-
-
     .city_rules .block_title
     {
         font-size: 28px;
@@ -405,7 +432,7 @@
 
     .city_rules .count
     {
-        top: 23px;
+        top: 0;
     }
 
     .city_rules .count .current,
@@ -416,13 +443,19 @@
     }
 
 
+    .city_rules .slide img
+    {
+        width: 100%;
+        max-height: auto;
+    }
+
+
 
     /*-------------------
         Contacts info
     -------------------*/
     .contacts_info
     {
-        padding-top: 20px;
         padding-bottom: 20px;
     }
 
@@ -463,12 +496,6 @@
     /*----------------
         Event info
     ----------------*/
-    .event_info
-    {
-        padding-top: 20px;
-    }
-
-
     .event_info .head
     {
         width: calc(100% - 104px);
@@ -493,12 +520,6 @@
     /*-----------
         Facts
     -----------*/
-    .facts
-    {
-        padding-top: 20px;
-    }
-
-
     .facts .block_title
     {
         font-size: 28px;
@@ -519,7 +540,7 @@
 
     .facts .count
     {
-        top: 19px;
+        top: 0;
     }
 
 
@@ -586,7 +607,6 @@
     -------------*/
     .gallery
     {
-        padding-top: 20px;
         padding-bottom: 32px;
     }
 
@@ -626,7 +646,7 @@
 
     .gallery_slider .count
     {
-        top: 19px;
+        top: 0;
     }
 
 
@@ -714,12 +734,6 @@
     /*-----------------
         Object info
     -----------------*/
-    .object_info
-    {
-        padding-top: 20px;
-    }
-
-
     .object_info .head
     {
         width: calc(100% - 184px);
@@ -783,12 +797,6 @@
     /*---------------------
         Our communities
     ---------------------*/
-    .our_communities
-    {
-        padding-top: 20px;
-    }
-
-
     .our_communities .block_title
     {
         font-size: 28px;
@@ -843,12 +851,6 @@
     /*----------------
         Route info
     ----------------*/
-    .route_info
-    {
-        padding-top: 20px;
-    }
-
-
     .route_info .head
     {
         width: calc(100% - 184px);
@@ -910,7 +912,7 @@
 
     .route_info .count
     {
-        top: 19px;
+        top: 0;
     }
 
 
@@ -920,7 +922,6 @@
     ------------*/
     .search
     {
-        padding-top: 20px;
         padding-bottom: 32px;
     }
 
@@ -955,7 +956,6 @@
     ------------------*/
     .terms_of_use
     {
-        padding-top: 20px;
         padding-bottom: 32px;
     }
 
@@ -974,12 +974,6 @@
     /*------------------
         Things to do
     ------------------*/
-    .things_to_do
-    {
-        padding-top: 22px;
-    }
-
-
     .things_to_do .block_desc
     {
         width: calc(100% - 104px);
@@ -990,7 +984,7 @@
 
     .things_to_do .next_link
     {
-        top: 19px;
+        top: 0;
     }
 
 
@@ -1006,12 +1000,6 @@
     /*-----------
         Stats
     -----------*/
-    .stats
-    {
-        padding-top: 20px;
-    }
-
-
     .stats .block_title
     {
         font-size: 28px;
@@ -1060,7 +1048,7 @@
 
     .stats .count
     {
-        top: 19px;
+        top: 0;
     }
 
 
@@ -1076,6 +1064,8 @@
 
     .menu_open footer
     {
+        position: relative;
+
         display: block;
 
         margin-top: 0;

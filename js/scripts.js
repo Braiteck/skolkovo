@@ -50,7 +50,7 @@ $(() => {
 
 	// Факты
 	if ($('.facts .swiper-container').length) {
-		new Swiper('.facts .swiper-container', {
+		factsSlider = new Swiper('.facts .swiper-container', {
 			initialSlide: url.searchParams.get('initialSlide') || 0,
 			loop: false,
 			speed: 750,
@@ -97,7 +97,7 @@ $(() => {
 
 	// Сколково в цифрах
 	if ($('.stats .swiper-container').length) {
-		new Swiper('.stats .swiper-container', {
+		statsSlider = new Swiper('.stats .swiper-container', {
 			initialSlide: url.searchParams.get('initialSlide') || 0,
 			loop: false,
 			speed: 750,
@@ -203,7 +203,11 @@ $(() => {
 		maxRowHeight: masonryRowHeight,
 		lastRow: 'nojustify',
 		margins: 5
-	}).on('jg.complete', function (e) { setTimeout(() => { galleryWidth() }, 100) })
+	}).on('jg.complete', function (e) {
+		setTimeout(() => {
+			galleryWidth()
+		}, 100)
+	})
 
 
 	// Галерея - Слайдер
@@ -273,7 +277,7 @@ $(() => {
 
 	// Городские правила
 	if ($('.route_info .swiper-container').length) {
-		new Swiper('.route_info .swiper-container', {
+		routeSlider = new Swiper('.route_info .swiper-container', {
 			loop: false,
 			speed: 750,
 			watchSlidesVisibility: true,
@@ -319,7 +323,7 @@ $(() => {
 
 	// Объект
 	if ($('.object_info .swiper-container').length) {
-		new Swiper('.object_info .swiper-container', {
+		objectSlider = new Swiper('.object_info .swiper-container', {
 			initialSlide: url.searchParams.get('initialSlide') || 0,
 			loop: false,
 			speed: 750,
@@ -330,6 +334,8 @@ $(() => {
 			spaceBetween: 58,
 			slidesPerView: 1,
 			autoHeight: true,
+			allowTouchMove: false,
+			noSwiping: true,
 			navigation: {
 				nextEl: '.object_info-swiper-button-next',
 				prevEl: '.object_info-swiper-button-prev'
@@ -396,6 +402,13 @@ $(() => {
 
 		$('aside .toggle_btn').toggleClass('active')
 		$('aside').toggleClass('mini')
+
+		setTimeout(() => {
+			if (typeof factsSlider !== 'undefined') { factsSlider.update() }
+			if (typeof objectSlider !== 'undefined') { objectSlider.update() }
+			if (typeof routeSlider !== 'undefined') { routeSlider.updateSize() }
+			if (typeof statsSlider !== 'undefined') { statsSlider.updateSize() }
+		}, 200)
 	})
 
 	$('aside .menu .items button').click(function (e) {
@@ -479,7 +492,18 @@ $(() => {
 		animations = true
 		arrowHide()
 	})
+
+
+	// Скролл в левой колонке
+	$('aside .scroll_up_btn').click(e => {
+		e.preventDefault()
+
+		let vertScroll = document.querySelector('aside .scroll_wrap')
+
+		vertScroll.scrollBy({ left: 0, top: -120, behavior: 'smooth' })
+	})
 })
+
 
 
 $(window).on('load', () => {
@@ -488,8 +512,18 @@ $(window).on('load', () => {
 		$('.loader').fadeOut(200)
 		$('.wrap').addClass('show')
 	}, 1000)
+
+
+	// Скролл в левой колонке
+	checkAsideScroll()
 })
 
+
+
+$(window).on('resize', () => {
+	// Скролл в левой колонке
+	checkAsideScroll()
+})
 
 const arrowShow = () => {
 	if (animations) {
@@ -514,11 +548,23 @@ const galleryWidth = () => {
 	let masonryWrap = $('.gallery .masonry_wrap'),
 		masonry = $('.gallery .masonry')
 
-	if (masonry.outerHeight() > masonryWrap.outerHeight()) {
+	if (masonry.height() > masonryWrap.height()) {
 		masonryWrap.width(masonryWrap.width() + 10)
 
-		setTimeout(() => { galleryWidth() })
+		setTimeout(() => {
+			galleryWidth()
+		})
 	} else {
 		$('.gallery .masonry_wrap').height('auto')
 	}
+}
+
+
+const checkAsideScroll = () => {
+	let scrollWrapHeight = $('aside .scroll_wrap').height(),
+		scrollHeight = $('aside .scroll').height()
+
+	scrollHeight > scrollWrapHeight
+		? $('aside .scroll_up_btn').addClass('show')
+		: $('aside .scroll_up_btn').removeClass('show')
 }

@@ -5,7 +5,7 @@
     -------------------*/
     .content
     {
-        padding: 104px 40px 98px 58px;
+        padding: 104px 40px 82px 58px;
     }
 
 
@@ -72,12 +72,6 @@
     }
 
 
-    header .menu_btn
-    {
-        margin-left: 80px;
-    }
-
-
 
     #menu .cont
     {
@@ -107,12 +101,6 @@
         line-height: 22px;
 
         margin-bottom: 12px;
-    }
-
-
-    #menu .links .columns
-    {
-        column-gap: 32px;
     }
 
 
@@ -169,8 +157,11 @@
     -------------*/
     aside
     {
-        height: calc(100% - 118px);
+        top: 100px;
+
+        height: calc(100% - 182px);
         padding-top: 24px;
+        padding-bottom: 82px;
     }
 
 
@@ -188,7 +179,9 @@
 
     aside .socials
     {
-        display: none;
+        bottom: -82px;
+
+        padding: 24px 40px;
     }
 
 
@@ -236,15 +229,14 @@
     }
 
 
+    .about_info .data
+    {
+        width: 850px;
+    }
+
     .about_info .data .text_block
     {
         margin-top: 20px;
-    }
-
-
-    aside.mini ~ .content .about_info
-    {
-        width: 850px;
     }
 
 
@@ -507,21 +499,38 @@
 
     .object_info .features
     {
-        width: calc(100% - 337px);
+        width: calc(100% - 344px);
     }
 
 
-    .object_info .features > .item,
+    /* .object_info .features > .item,
     .object_info .features > .group,
     .object_info .features > .btns.right
     {
         width: calc(50% - 12px);
+    } */
+
+
+    .object_info .features > .item
+    {
+        min-width: 0;
+    }
+
+    .object_info .features .item.centered
+    {
+        margin-right: 0;
+        margin-left: auto;
     }
 
 
     .object_info .features .btns
     {
         margin-top: 16px;
+    }
+
+    .object_info .features > .btns
+    {
+        margin-right: 0;
     }
 
     .object_info .features .build_route_link
@@ -536,6 +545,12 @@
 
     .object_info .features > .btns.right
     {
+        margin-left: auto;
+    }
+
+    .object_info .features > .btns.left
+    {
+        margin-right: 0;
         margin-left: auto;
     }
 
@@ -612,6 +627,17 @@
     .residents .row
     {
         grid-template-rows: 1fr 1fr;
+    }
+
+
+    .residents .item:nth-child(3n+2) .data
+    {
+        order: 0;
+    }
+
+    .residents .item:nth-child(2n+2) .data
+    {
+        order: 2;
     }
 
 
@@ -898,9 +924,12 @@
     ------------------*/
     .terms_of_use
     {
-        width: 653px;
+        width: 755px;
+        margin-right: auto;
+        margin-left: auto;
         padding-top: 20px;
         padding-bottom: 32px;
+        padding-left: 0;
     }
 
 
@@ -914,9 +943,15 @@
     /*------------------
         Things to do
     ------------------*/
+    .things_to_do .block_desc
+    {
+        margin-bottom: 18px;
+    }
+
+
     .things_to_do .item .data
     {
-        height: 201px;
+        height: 212px;
         padding-top: 16px;
     }
 
@@ -924,6 +959,17 @@
     .things_to_do .row
     {
         grid-template-rows: 1fr 1fr;
+    }
+
+
+    .things_to_do .item:nth-child(3n+2) .data
+    {
+        order: 0;
+    }
+
+    .things_to_do .item:nth-child(2n+2) .data
+    {
+        order: 2;
     }
 
 
@@ -942,15 +988,16 @@
     }
 
 
-    footer .socials a
-    {
-        display: none;
-    }
-
-
 
     footer .links
     {
         margin-left: 82px;
+    }
+
+
+
+    footer .creator
+    {
+        margin-right: 22px;
     }
 }

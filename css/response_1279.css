@@ -30,7 +30,7 @@
 
     aside.mini ~ .content
     {
-        padding-left: 62px;
+        width: calc(100% - 80px);
     }
 
     header.relative ~ .content
@@ -211,7 +211,7 @@
 
     header .menu_btn
     {
-        margin-left: 52px;
+        margin-left: 40px;
     }
 
 
@@ -221,7 +221,9 @@
     -------------*/
     aside
     {
-        height: calc(100% - 91px);
+        top: 91px;
+
+        height: calc(100% - 173px);
     }
 
 
@@ -267,6 +269,17 @@
         left: 72px;
 
         width: calc(100% - 72px);
+    }
+
+
+    aside .socials
+    {
+        padding: 24px 32px;
+    }
+
+    aside .socials a + a
+    {
+        margin-left: 20px;
     }
 
 
@@ -400,8 +413,7 @@
 
     .city_rules .slide img
     {
-        width: 100%;
-        max-height: none;
+        max-height: 328px;
     }
 
 
@@ -488,6 +500,11 @@
     {
         width: 100%;
         margin-top: 24px;
+    }
+
+    .object_info .features > .item
+    {
+        min-width: 0;
     }
 
     .event_info .features .val
@@ -827,7 +844,7 @@
     .terms_of_use
     {
         width: 100%;
-        padding: 0 0 40px;
+        padding: 20px 0 40px;
     }
 
 
@@ -860,7 +877,8 @@
     }
 
 
-    .things_to_do .hor_scroll
+    .things_to_do .hor_scroll,
+    aside.mini ~ .content .things_to_do .hor_scroll
     {
         width: calc(100% + 64px);
         margin-right: -32px;
@@ -1139,6 +1157,11 @@
         padding: 0 32px;
     }
 
+    footer .socials a + a
+    {
+        margin-left: 20px;
+    }
+
 
     footer .links
     {
@@ -1149,5 +1172,6 @@
     footer .creator
     {
         width: 91px;
+        margin-right: 0;
     }
 }

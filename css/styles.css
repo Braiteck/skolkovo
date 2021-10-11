@@ -294,6 +294,18 @@ button
     opacity: 1;
 }
 
+.menu_open .wrap
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    overflow: hidden;
+
+    width: 100%;
+    height: 100%;
+}
+
 
 .main
 {
@@ -345,8 +357,11 @@ button
     width: calc(100% - var(--sidebar_width));
     margin-left: auto;
     padding: 152px 58px 110px;
+}
 
-    transition: .2s linear;
+.wrap.show .content
+{
+    transition: width .2s linear, padding-left .2s linear;
 }
 
 header.relative ~ .content
@@ -357,7 +372,7 @@ header.relative ~ .content
 
 aside.mini ~ .content
 {
-    width: calc(100% - 80px);
+    width: calc(100% - var(--sidebar_width));
 }
 
 .content > *:first-child
@@ -847,7 +862,9 @@ aside.mini ~ .content
 ------------*/
 .loader
 {
-    position: absolute;
+    position: fixed;
+    top: 50%;
+    left: 50%;
 
     display: block;
 
@@ -855,7 +872,7 @@ aside.mini ~ .content
     height: 500px;
     margin: auto;
 
-    inset: 0;
+    transform: translate(-50%, -50%);
 }
 
 
@@ -872,6 +889,8 @@ header
 
     width: 100%;
     padding: 30px 0 18px;
+
+    background: #fff;
 }
 
 header.relative
@@ -1280,6 +1299,8 @@ header .mob_menu_btn .icon
 .menu_open header
 {
     z-index: 16;
+
+    background: none;
 }
 
 .menu_open header .menu,
@@ -1296,7 +1317,7 @@ header .mob_menu_btn .icon
 ----------*/
 #menu
 {
-    position: absolute;
+    position: fixed;
     z-index: 15;
     top: 0;
     left: 0;
@@ -1336,7 +1357,7 @@ header .mob_menu_btn .icon
     display: none;
 
     width: 100%;
-    padding: 12px 24px;
+    padding: 12px 18px;
 
     border-bottom: 1px solid #c4c4c4;
 
@@ -1394,7 +1415,7 @@ header .mob_menu_btn .icon
     font-weight: 600;
     line-height: 22px;
 
-    margin-left: 52px;
+    margin-left: 124px;
 
     text-transform: uppercase;
 }
@@ -1455,7 +1476,14 @@ header .mob_menu_btn .icon
     height: 16px;
     margin: auto;
 
+    transition: transform .2s linear;
     transform: rotate(90deg);
+}
+
+#menu .col_left .title.active .icon,
+#menu .col_right .title.active .icon
+{
+    transform: rotate(-90deg);
 }
 
 
@@ -1486,7 +1514,7 @@ header .mob_menu_btn .icon
 
 #menu .links .columns
 {
-    column-gap: 40px;
+    column-gap: 24px;
     column-count: 3;
 }
 
@@ -1514,6 +1542,7 @@ header .mob_menu_btn .icon
 {
     margin-top: 5px;
 }
+
 
 #menu .links .items a
 {
@@ -1559,6 +1588,17 @@ header .mob_menu_btn .icon
 #menu .links .items a span
 {
     width: calc(100% - 44px);
+}
+
+
+#menu .links .items a:hover
+{
+    background: #d9ddde;
+}
+
+#menu .links .items a.active
+{
+    background: #d3d800;
 }
 
 
@@ -1646,9 +1686,12 @@ aside
     flex-direction: column;
 
     width: var(--sidebar_width);
-    height: calc(100% - 242px);
-    padding: 51px 0 0;
+    height: calc(100% - 240px);
+    padding: 40px 0 28px;
+}
 
+.wrap.show aside
+{
     transition: width .2s linear;
 }
 
@@ -1676,7 +1719,7 @@ aside .toggle_btn
     color: #fff;
 
     position: absolute;
-    top: 58px;
+    top: 47px;
     right: 18px;
 
     display: flex;
@@ -1777,21 +1820,135 @@ aside .logo img
 
 
 
-aside .scroll
+aside .scroll_wrap
 {
     overflow-x: hidden;
     overflow-y: auto;
 
     width: 100%;
-    max-height: 100%;
+    max-height: calc(100% - 40px);
 
     flex: 1 0 auto;
+    scrollbar-color: transparent transparent;
+    scrollbar-width: thin;
 }
 
-aside .scroll::-webkit-scrollbar
+aside .scroll_wrap::-webkit-scrollbar
 {
-    width: 5px !important;
-    height: 5px !important;
+    width: 0 !important;
+    height: 0 !important;
+
+    background-color: transparent;
+}
+
+aside .scroll_wrap::-webkit-scrollbar-thumb
+{
+    background-color: transparent;
+}
+
+
+
+aside .scroll_up_btn
+{
+    display: none;
+
+    width: 60px;
+    height: 72px;
+    min-height: 72px;
+    margin-bottom: -12px;
+    margin-left: 20px;
+
+    transform: rotate(180deg)  scale(.35);
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+aside .scroll_up_btn.show
+{
+    display: flex;
+}
+
+aside .scroll_up_btn svg
+{
+    display: block;
+
+    width: 60px;
+    height: 72px;
+}
+
+aside .scroll_up_btn path
+{
+    -webkit-animation: arrow 2s infinite;
+            animation: arrow 2s infinite;
+
+    stroke: #fff;
+    fill: transparent;
+    stroke-width: 1px;
+}
+
+@keyframes arrow
+{
+    0%
+    {
+        opacity: 0;
+    }
+    40%
+    {
+        opacity: 1;
+    }
+    80%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes arrow
+{
+    0%
+    {
+        opacity: 0;
+    }
+    40%
+    {
+        opacity: 1;
+    }
+    80%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 0;
+    }
+}
+
+.scroll_up_btn path.a1
+{
+    -webkit-animation-delay: -1s;
+            animation-delay: -1s;
+}
+
+.scroll_up_btn path.a2
+{
+    -webkit-animation-delay: -.5s;
+            animation-delay: -.5s;
+
+    stroke-width: 3px;
+}
+
+.scroll_up_btn path.a3
+{
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+
+    stroke-width: 5px;
 }
 
 
@@ -1831,7 +1988,6 @@ aside .menu .items button
     width: 100%;
     padding: 9px 16px 9px 40px;
 
-    transition: .2s linear;
     text-align: left;
     white-space: nowrap;
     text-decoration: none;
@@ -1840,6 +1996,12 @@ aside .menu .items button
     align-items: center;
     align-content: center;
     flex-wrap: wrap;
+}
+
+.wrap.show aside .menu .items a,
+.wrap.show aside .menu .items button
+{
+    transition: .2s linear;
 }
 
 
@@ -1965,8 +2127,9 @@ aside.mini:before
     height: 100%;
 }
 
-aside.mini .menu .items
+aside.mini .scroll_wrap
 {
+    max-height: calc(100% - 82px);
     margin-top: 42px;
 }
 
@@ -2587,6 +2750,7 @@ aside.mini .menu .items button span
 .city_rules .count
 {
     position: absolute;
+    z-index: 5;
     top: 13px;
     right: 13px;
 
@@ -2876,6 +3040,7 @@ aside.mini .menu .items button span
 .facts .count
 {
     position: absolute;
+    z-index: 5;
     top: 13px;
     right: 13px;
 
@@ -2982,7 +3147,7 @@ aside.mini .menu .items button span
     overflow: hidden;
 
     width: 100%;
-    height: 470px;
+    height: 424px;
 
     background: #ddd;
 }
@@ -3242,6 +3407,7 @@ aside.mini .menu .items button span
 .gallery_slider .count
 {
     position: absolute;
+    z-index: 5;
     top: 11px;
     right: 13px;
 
@@ -3430,8 +3596,16 @@ aside.mini .menu .items button span
     margin-right: -58px;
     margin-left: -58px;
 
+    transition: .2s linear;
+
     scrollbar-color: transparent transparent !important;
     scrollbar-width: thin !important;
+}
+
+aside.mini ~ .content .residents .hor_scroll
+{
+    width: calc(100% + var(--sidebar_width) + 58px);
+    margin-left: calc((var(--sidebar_width) - 22px) * -1);
 }
 
 .residents .hor_scroll::-webkit-scrollbar
@@ -3461,16 +3635,39 @@ aside.mini .menu .items button span
 
 .residents .item
 {
+    color: #fff;
+
     position: relative;
 
     display: flex;
 
     width: 564px;
 
+    text-decoration: none;
+
     justify-content: flex-start;
     align-items: stretch;
     align-content: stretch;
     flex-wrap: wrap;
+}
+
+
+.residents .item:after
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    content: '';
+    transition: opacity .2s linear;
+
+    opacity: 0;
+    border: 6px solid #d3d800;
 }
 
 
@@ -3609,11 +3806,6 @@ aside.mini .menu .items button span
     border-radius: inherit;
 }
 
-.residents .item .data .link:hover
-{
-    opacity: 1;
-}
-
 
 .residents .item .thumb
 {
@@ -3645,6 +3837,17 @@ aside.mini .menu .items button span
 .residents .item:nth-child(3n+2) .data
 {
     order: 2;
+}
+
+
+.residents .item:hover:after
+{
+    opacity: 1;
+}
+
+.residents .item:hover .data .link
+{
+    opacity: 1;
 }
 
 
@@ -3831,7 +4034,7 @@ aside.mini .menu .items button span
 ------------------*/
 .terms_of_use
 {
-    width: 675px;
+    width: 755px;
     max-width: 100%;
     margin-right: auto;
     margin-left: auto;
@@ -3866,7 +4069,7 @@ aside.mini .menu .items button span
     line-height: 22px;
 
     width: calc(100% - 124px);
-    margin-bottom: 17px;
+    margin-bottom: 19px;
 }
 
 
@@ -3888,8 +4091,16 @@ aside.mini .menu .items button span
     margin-right: -58px;
     margin-left: -58px;
 
+    transition: .2s linear;
+
     scrollbar-color: transparent transparent !important;
     scrollbar-width: thin !important;
+}
+
+aside.mini ~ .content .things_to_do .hor_scroll
+{
+    width: calc(100% + var(--sidebar_width) + 58px);
+    margin-left: calc((var(--sidebar_width) - 22px) * -1);
 }
 
 .things_to_do .hor_scroll::-webkit-scrollbar
@@ -3930,16 +4141,38 @@ aside.mini .menu .items button span
 
 .things_to_do .item
 {
+    color: #fff;
+
     position: relative;
 
     display: flex;
 
     width: 564px;
 
+    text-decoration: none;
+
     justify-content: flex-start;
     align-items: stretch;
     align-content: stretch;
     flex-wrap: wrap;
+}
+
+.things_to_do .item:after
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    content: '';
+    transition: opacity .2s linear;
+
+    opacity: 0;
+    border: 6px solid #d3d800;
 }
 
 
@@ -4092,16 +4325,6 @@ aside.mini .menu .items button span
     line-height: 26px;
 }
 
-.things_to_do .item .data .name a
-{
-    color: currentColor;
-
-    display: inline-block;
-
-    vertical-align: top;
-    text-decoration: none;
-}
-
 
 .things_to_do .item .data .type,
 .things_to_do .item .data .desc
@@ -4168,12 +4391,9 @@ aside.mini .menu .items button span
 
 .things_to_do .item .data .link
 {
-    color: currentColor;
-
     display: block;
 
     transition: opacity .2s linear;
-    text-decoration: none;
 
     opacity: .5;
     border-radius: 50%;
@@ -4189,17 +4409,11 @@ aside.mini .menu .items button span
     border-radius: inherit;
 }
 
-.things_to_do .item .data .link:hover
-{
-    opacity: 1;
-}
-
 
 .things_to_do .item .thumb
 {
     position: relative;
 
-    display: block;
     overflow: hidden;
 
     width: 50%;
@@ -4225,6 +4439,17 @@ aside.mini .menu .items button span
 .things_to_do .item:nth-child(3n+2) .data
 {
     order: 2;
+}
+
+
+.things_to_do .item:hover:after
+{
+    opacity: 1;
+}
+
+.things_to_do .item:hover .data .link
+{
+    opacity: 1;
 }
 
 
@@ -4410,6 +4635,7 @@ aside.mini .menu .items button span
 .route_info .count
 {
     position: absolute;
+    z-index: 5;
     top: 13px;
     right: 13px;
 
@@ -4448,7 +4674,7 @@ aside.mini .menu .items button span
     overflow: visible !important;
 }
 
-.city_rroute_infoules .swiper-container .slide
+.route_info .swiper-container .slide
 {
     visibility: hidden;
 
@@ -4458,7 +4684,7 @@ aside.mini .menu .items button span
     opacity: 0;
 }
 
-.route_info .swiper-container .slide.visible
+.route_info .swiper-container .slide.visible.active
 {
     visibility: visible;
 
@@ -4657,7 +4883,7 @@ aside.mini .menu .items button span
 .object_info .count
 {
     position: absolute;
-    z-index: 9;
+    z-index: 5;
     top: 170px;
     right: 13px;
 
@@ -4843,7 +5069,7 @@ aside.mini .menu .items button span
 {
     display: flex;
 
-    width: calc(100% - 590px);
+    width: calc(100% - 604px);
     margin-left: auto;
 
     justify-content: space-between;
@@ -4862,7 +5088,7 @@ aside.mini .menu .items button span
 .object_info .features .item.centered
 {
     margin-right: auto;
-    margin-left: auto;
+    margin-left: 180px;
 }
 
 .object_info .features .item.right
@@ -4933,7 +5159,7 @@ aside.mini .menu .items button span
 {
     margin-top: 0;
     margin-right: auto;
-    margin-left: auto;
+    margin-left: 120px;
 }
 
 .object_info .features > .btns.right
@@ -4945,7 +5171,7 @@ aside.mini .menu .items button span
 .object_info .features > .btns.left
 {
     margin-right: auto;
-    margin-left: 50px;
+    margin-left: 120px;
 }
 
 .object_info .features .btns > * + *
@@ -5053,7 +5279,15 @@ aside.mini .menu .items button span
     margin-right: -58px;
     margin-left: -58px;
 
+    transition: .2s linear;
+
     background: #ddd;
+}
+
+aside.mini ~ .content .objects_map
+{
+    width: calc(100% + var(--sidebar_width) + 58px);
+    margin-left: calc((var(--sidebar_width) - 22px) * -1);
 }
 
 
@@ -5067,11 +5301,17 @@ aside.mini .menu .items button span
     height: 100%;
 }
 
+.objects_map #map > *
+{
+    width: 100% !important;
+    height: 100% !important;
+}
+
 
 .objects_map .object
 {
     width: 232px;
-    padding: 15px 15px 30px;
+    padding: 35px 15px 30px;
 }
 
 
@@ -5280,10 +5520,34 @@ aside.mini .menu .items button span
     background: none;
 }
 
-.ymaps-2-1-79-balloon__close,
-.ymaps-2-1-79-balloon_to_top .ymaps-2-1-79-balloon__tail
+
+.ymaps-2-1-79-balloon__close
 {
-    display: none !important;
+    color: #c4c4c4;
+
+    margin: 0;
+
+    transition: color .2s linear;
+}
+
+.ymaps-2-1-79-balloon__close-button
+{
+    width: 45px !important;
+    height: 35px !important;
+}
+
+
+.ymaps-2-1-79-balloon__tail
+{
+    right: 0 !important;
+    left: -7px !important;
+
+    width: 32px !important;
+    height: 32px !important;
+    margin: 0 auto -32px !important;
+
+    background: #fff !important;
+    box-shadow: none !important;
 }
 
 
@@ -5312,6 +5576,7 @@ aside.mini .menu .items button span
 .stats .count
 {
     position: absolute;
+    z-index: 5;
     top: 13px;
     right: 13px;
 
@@ -5360,7 +5625,7 @@ aside.mini .menu .items button span
     opacity: 0;
 }
 
-.stats .swiper-container .slide.visible
+.stats .swiper-container .slide.visible.active
 {
     visibility: visible;
 
@@ -6077,6 +6342,7 @@ footer.absolute:not(.dark) .creator
 
 .menu_open footer
 {
+    position: absolute;
     z-index: 16;
 }
 
