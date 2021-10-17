@@ -502,6 +502,19 @@ $(() => {
 
 		vertScroll.scrollBy({ left: 0, top: -120, behavior: 'smooth' })
 	})
+
+
+	// Подписка
+	$('body').on('submit', '#menu .subscribe form, #subscribe_modal form', function (e) {
+		e.preventDefault()
+
+		Fancybox.close()
+
+		Fancybox.show([{
+			src: '#success_subscribe_modal',
+			type: 'inline'
+		}])
+	})
 })
 
 
@@ -516,6 +529,15 @@ $(window).on('load', () => {
 
 	// Скролл в левой колонке
 	checkAsideScroll()
+
+
+	// Подписка
+	if ($('#subscribe_modal').length) {
+		Fancybox.show([{
+			src: '#subscribe_modal',
+			type: 'inline'
+		}])
+	}
 })
 
 

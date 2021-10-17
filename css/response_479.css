@@ -15,6 +15,13 @@
     }
 
 
+    .fancybox__content > .carousel__button.is-close
+    {
+        top: 12px;
+        right: 12px;
+    }
+
+
 
     /*----------------
         Pagination
@@ -547,7 +554,18 @@
 
 
 
-    /*------------
-        Footer
-    ------------*/
+    /*-----------
+        PopUp
+    -----------*/
+    .modal
+    {
+        padding: 40px 32px 160px;
+    }
+
+
+    .modal_title
+    {
+        font-size: 22px;
+        line-height: 28px;
+    }
 }

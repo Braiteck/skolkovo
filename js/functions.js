@@ -59,6 +59,17 @@ $(() => {
 	}
 
 
+	// Fancybox
+	Fancybox.defaults.autoFocus = false
+	Fancybox.defaults.dragToClose = false
+	Fancybox.defaults.l10n = {
+		CLOSE: "Закрыть",
+		NEXT: "Следующий",
+		PREV: "Предыдущий",
+		MODAL: "Вы можете закрыть это модальное окно нажав клавишу ESC"
+	}
+
+
 	// Моб. версия
 	fiestResize = false
 

@@ -14,6 +14,12 @@
         padding: 20px;
     }
 
+    .fancybox__content > .carousel__button.is-close
+    {
+        top: 16px;
+        right: 16px;
+    }
+
 
 
     /*----------------
@@ -794,5 +800,34 @@
         align-items: flex-start;
         align-content: flex-start;
         flex-wrap: wrap;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .modal
+    {
+        padding: 40px 40px 200px;
+    }
+
+
+    .modal .icon
+    {
+        margin-top: 0;
+    }
+
+
+    .modal_title
+    {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+
+    #subscribe_modal form .submit_btn
+    {
+        margin-top: 16px;
     }
 }
