@@ -750,6 +750,32 @@
 
 
 
+    /*----------------
+        Error info
+    ----------------*/
+    .error_info .title
+    {
+        font-size: 27px;
+        line-height: 35px;
+    }
+
+    .error_info .desc
+    {
+        font-size: 17px;
+        line-height: 23px;
+
+        width: 340px;
+    }
+
+
+    .error_info .link
+    {
+        margin-top: 28px;
+        padding: 12px 24px;
+    }
+
+
+
     /*------------
         Footer
     ------------*/
