@@ -507,17 +507,17 @@ $(() => {
 	})
 
 
-	// Подписка
-	$('body').on('submit', '#menu .subscribe form, #subscribe_modal form', function (e) {
-		e.preventDefault()
+	// // Подписка
+	// $('body').on('submit', '#menu .subscribe form, #subscribe_modal form', function (e) {
+	// 	e.preventDefault()
 
-		Fancybox.close()
+	// 	Fancybox.close()
 
-		Fancybox.show([{
-			src: '#success_subscribe_modal',
-			type: 'inline'
-		}])
-	})
+	// 	Fancybox.show([{
+	// 		src: '#success_subscribe_modal',
+	// 		type: 'inline'
+	// 	}])
+	// })
 })
 
 
