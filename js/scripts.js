@@ -145,42 +145,45 @@ $(() => {
 
 	// Гор. скролл
 	if ($('.hor_scroll').length) {
-		const horScroll = document.querySelector('.hor_scroll')
-		let mouseDown = false,
-			startX, scrollLeft
+		const horScroll = document.querySelectorAll('.hor_scroll')
 
-		let startDragging = e => {
-			mouseDown = true
-			startX = e.pageX - horScroll.offsetLeft
-			scrollLeft = horScroll.scrollLeft
-		}
+		horScroll.forEach(el => {
+			let mouseDown = false,
+				startX, scrollLeft
 
-		let stopDragging = e => {
-			mouseDown = false
-		}
-
-		horScroll.addEventListener('mousemove', (e) => {
-			e.preventDefault()
-
-			if (!mouseDown) { return }
-
-			const x = e.pageX - horScroll.offsetLeft
-			const scroll = x - startX
-
-			horScroll.scrollLeft = scrollLeft - scroll
-		})
-
-		horScroll.addEventListener('mousedown', startDragging, false)
-		horScroll.addEventListener('mouseup', stopDragging, false)
-		horScroll.addEventListener('mouseleave', stopDragging, false)
-		horScroll.addEventListener('wheel', e => {
-			const toLeft = e.deltaY < 0 && horScroll.scrollLeft > 0,
-				toRight = e.deltaY > 0 && horScroll.scrollLeft < horScroll.scrollWidth - horScroll.clientWidth
-
-			if (toLeft || toRight) {
-				e.preventDefault()
-				horScroll.scrollLeft += e.deltaY
+			let startDragging = e => {
+				mouseDown = true
+				startX = e.pageX - el.offsetLeft
+				scrollLeft = el.scrollLeft
 			}
+
+			let stopDragging = e => {
+				mouseDown = false
+			}
+
+			el.addEventListener('mousemove', (e) => {
+				e.preventDefault()
+
+				if (!mouseDown) { return }
+
+				const x = e.pageX - el.offsetLeft
+				const scroll = x - startX
+
+				el.scrollLeft = scrollLeft - scroll
+			})
+
+			el.addEventListener('mousedown', startDragging, false)
+			el.addEventListener('mouseup', stopDragging, false)
+			el.addEventListener('mouseleave', stopDragging, false)
+			el.addEventListener('wheel', e => {
+				const toLeft = e.deltaY < 0 && el.scrollLeft > 0,
+					toRight = e.deltaY > 0 && el.scrollLeft < el.scrollWidth - el.clientWidth
+
+				if (toLeft || toRight) {
+					e.preventDefault()
+					el.scrollLeft += e.deltaY
+				}
+			})
 		})
 	}
 
