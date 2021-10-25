@@ -351,6 +351,11 @@
         width: 100%;
     }
 
+    .route_info .step .name
+    {
+        -webkit-line-clamp: 2;
+    }
+
 
     .route_info .map
     {

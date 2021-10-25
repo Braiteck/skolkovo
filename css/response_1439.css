@@ -691,14 +691,19 @@
     {
         line-height: 112px;
 
-        margin-right: -20px;
+        margin-right: -12px;
         margin-left: -32px;
     }
 
     .route_info .step .name
     {
-        width: calc(100% - 48px);
+        font-size: 24px;
+        line-height: 26px;
+
+        max-width: calc(100% - 56px);
         margin-top: 7px;
+
+        -webkit-line-clamp: 3;
     }
 
 

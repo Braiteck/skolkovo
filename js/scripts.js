@@ -159,12 +159,20 @@ $(() => {
 
 			let stopDragging = e => {
 				mouseDown = false
+
+				setTimeout(() => {
+					let el = $('.gallery .masonry')
+					if (el.length) { el.css('pointerEvents', 'auto') }
+				})
 			}
 
-			el.addEventListener('mousemove', (e) => {
+			el.addEventListener('mousemove', e => {
 				e.preventDefault()
 
 				if (!mouseDown) { return }
+
+				let el = $('.gallery .masonry')
+				if (el.length) { el.css('pointerEvents', 'none') }
 
 				const x = e.pageX - el.offsetLeft
 				const scroll = x - startX
