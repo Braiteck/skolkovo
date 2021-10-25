@@ -406,7 +406,7 @@ $(() => {
 
 
 	// Боковая колонка
-	var currentSection = 1
+	var currentSection = parseInt($('aside .menu .items button:first').data('section'))
 
 	$('aside .toggle_btn').click(e => {
 		e.preventDefault()
@@ -443,10 +443,10 @@ $(() => {
 
 		currentSection++
 
-		if (currentSection > 6) { currentSection = 1 }
+		if (currentSection > ($('.things_to_do .sections > *').length + 1)) { currentSection = 1 }
 
 		$('aside .menu .items button').removeClass('active')
-		$('aside .menu .items button[data-section="section' + currentSection + '"]').addClass('active')
+		$('aside .menu .items button[data-section="' + currentSection + '"]').addClass('active')
 
 		horScroll.scrollBy({ left: $('.things_to_do #section' + currentSection).position().left, top: 0, behavior: 'smooth' })
 	})
