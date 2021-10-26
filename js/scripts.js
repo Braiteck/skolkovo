@@ -406,7 +406,7 @@ $(() => {
 
 
 	// Боковая колонка
-	var currentSection = parseInt($('aside .menu .items button:first').data('section'))
+	var currentSection = $('#' + $('.things_to_do .sections > *:first').attr('id'))
 
 	$('aside .toggle_btn').click(e => {
 		e.preventDefault()
@@ -422,35 +422,19 @@ $(() => {
 		}, 200)
 	})
 
-	$('aside .menu .items button').click(function (e) {
-		e.preventDefault()
-
-		let horScroll = document.querySelector('.things_to_do .hor_scroll')
-
-		currentSection = $(this).data('section')
-
-		$('aside .menu .items button').removeClass('active')
-		$(this).addClass('active')
-
-		horScroll.scrollBy({ left: $('.things_to_do #section' + currentSection).position().left, top: 0, behavior: 'smooth' })
-	})
-
 
 	$('.things_to_do .next_link .btn').click(e => {
 		e.preventDefault()
 
 		let horScroll = document.querySelector('.things_to_do .hor_scroll')
 
-		currentSection++
+		currentSection = currentSection.next()
 
-		if (currentSection > ($('.things_to_do .sections > *').length + 1)) {
-			currentSection = parseInt($('aside .menu .items button:first').data('section'))
+		if (!currentSection.length) {
+			currentSection = $('#' + $('.things_to_do .sections > *:first').attr('id'))
 		}
 
-		$('aside .menu .items button').removeClass('active')
-		$('aside .menu .items button[data-section="' + currentSection + '"]').addClass('active')
-
-		horScroll.scrollBy({ left: $('.things_to_do #section' + currentSection).position().left, top: 0, behavior: 'smooth' })
+		horScroll.scrollBy({ left: currentSection.position().left, top: 0, behavior: 'smooth' })
 	})
 
 

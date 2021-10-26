@@ -801,6 +801,11 @@
         margin-top: 8px;
     }
 
+    .route_info .step .icon
+    {
+        margin-top: -12px;
+    }
+
 
 
     /*------------
