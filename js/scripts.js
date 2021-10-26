@@ -333,54 +333,54 @@ $(() => {
 
 
 	// Объект
-	if ($('.object_info .swiper-container').length) {
-		objectSlider = new Swiper('.object_info .swiper-container', {
-			initialSlide: url.searchParams.get('initialSlide') || 0,
-			loop: false,
-			speed: 750,
-			simulateTouch: false,
-			watchSlidesVisibility: true,
-			slideActiveClass: 'active',
-			slideVisibleClass: 'visible',
-			spaceBetween: 58,
-			slidesPerView: 1,
-			autoHeight: true,
-			allowTouchMove: false,
-			noSwiping: true,
-			navigation: {
-				nextEl: '.object_info-swiper-button-next',
-				prevEl: '.object_info-swiper-button-prev'
-			},
-			on: {
-				init: swiper => {
-					let parent = $(swiper.$el).closest('.object_info'),
-						currentIndex,
-						totalIndex
+	// if ($('.object_info .swiper-container').length) {
+	// 	objectSlider = new Swiper('.object_info .swiper-container', {
+	// 		initialSlide: url.searchParams.get('initialSlide') || 0,
+	// 		loop: false,
+	// 		speed: 750,
+	// 		simulateTouch: false,
+	// 		watchSlidesVisibility: true,
+	// 		slideActiveClass: 'active',
+	// 		slideVisibleClass: 'visible',
+	// 		spaceBetween: 58,
+	// 		slidesPerView: 1,
+	// 		autoHeight: true,
+	// 		allowTouchMove: false,
+	// 		noSwiping: true,
+	// 		navigation: {
+	// 			nextEl: '.object_info-swiper-button-next',
+	// 			prevEl: '.object_info-swiper-button-prev'
+	// 		},
+	// 		on: {
+	// 			init: swiper => {
+	// 				let parent = $(swiper.$el).closest('.object_info'),
+	// 					currentIndex,
+	// 					totalIndex
 
-					(swiper.activeIndex + 1) < 10
-						? currentIndex = '0' + (swiper.activeIndex + 1)
-						: currentIndex = swiper.activeIndex + 1
+	// 				(swiper.activeIndex + 1) < 10
+	// 					? currentIndex = '0' + (swiper.activeIndex + 1)
+	// 					: currentIndex = swiper.activeIndex + 1
 
-					swiper.slides.length < 10
-						? totalIndex = '0' + swiper.slides.length
-						: totalIndex = swiper.slides.length
+	// 				swiper.slides.length < 10
+	// 					? totalIndex = '0' + swiper.slides.length
+	// 					: totalIndex = swiper.slides.length
 
-					parent.find('.count .current').text(currentIndex)
-					parent.find('.count .total').text(totalIndex)
-				},
-				slideChange: swiper => {
-					let parent = $(swiper.$el).closest('.object_info'),
-						currentIndex
+	// 				parent.find('.count .current').text(currentIndex)
+	// 				parent.find('.count .total').text(totalIndex)
+	// 			},
+	// 			slideChange: swiper => {
+	// 				let parent = $(swiper.$el).closest('.object_info'),
+	// 					currentIndex
 
-					(swiper.activeIndex + 1) < 10
-						? currentIndex = '0' + (swiper.activeIndex + 1)
-						: currentIndex = swiper.activeIndex + 1
+	// 				(swiper.activeIndex + 1) < 10
+	// 					? currentIndex = '0' + (swiper.activeIndex + 1)
+	// 					: currentIndex = swiper.activeIndex + 1
 
-					parent.find('.count .current').text(currentIndex)
-				}
-			}
-		})
-	}
+	// 				parent.find('.count .current').text(currentIndex)
+	// 			}
+	// 		}
+	// 	})
+	// }
 
 
 	// Моб. меню
@@ -443,7 +443,9 @@ $(() => {
 
 		currentSection++
 
-		if (currentSection > ($('.things_to_do .sections > *').length + 1)) { currentSection = 1 }
+		if (currentSection > ($('.things_to_do .sections > *').length + 1)) {
+			currentSection = parseInt($('aside .menu .items button:first').data('section'))
+		}
 
 		$('aside .menu .items button').removeClass('active')
 		$('aside .menu .items button[data-section="' + currentSection + '"]').addClass('active')
