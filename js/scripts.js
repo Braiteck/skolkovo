@@ -529,12 +529,12 @@ $(window).on('load', () => {
 
 
 	// Подписка
-	if ($('#subscribe_modal').length) {
-		Fancybox.show([{
-			src: '#subscribe_modal',
-			type: 'inline'
-		}])
-	}
+	// if ($('#subscribe_modal').length) {
+	// 	Fancybox.show([{
+	// 		src: '#subscribe_modal',
+	// 		type: 'inline'
+	// 	}])
+	// }
 })
 
 

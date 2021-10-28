@@ -3963,8 +3963,6 @@ aside.mini ~ .content .residents .hor_scroll
     padding-bottom: 29.26%;
 
     text-decoration: none;
-
-    background: #ddd;
 }
 
 .article_info .text_block .images img
@@ -3979,7 +3977,7 @@ aside.mini ~ .content .residents .hor_scroll
     height: 100%;
     margin: 0;
 
-    object-fit: cover;
+    object-fit: contain;
 }
 
 
@@ -4769,7 +4767,7 @@ aside.mini ~ .content .things_to_do .hor_scroll
     overflow: hidden;
 
     width: 100%;
-    height: 423px;
+    height: 380px;
 
     transform: translateZ(0);
 
@@ -4837,7 +4835,7 @@ aside.mini ~ .content .things_to_do .hor_scroll
 
     overflow: hidden;
 
-    padding-bottom: 423px;
+    padding-bottom: 380px;
 
     background: #ddd;
 }
