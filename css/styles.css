@@ -5171,8 +5171,14 @@ aside.mini ~ .content .things_to_do .hor_scroll
 {
     color: currentColor;
 
+    transition: color .2s linear;
     white-space: nowrap;
     text-decoration: none;
+}
+
+.object_info .features .val a:hover
+{
+    color: #d3d800;
 }
 
 
@@ -5297,7 +5303,7 @@ aside.mini ~ .content .things_to_do .hor_scroll
 
 .object_info .features .build_route_link:hover
 {
-    color: var(--text_color);
+    color: var(--text_color) !important;
 
     background: #d3d800;
 }
