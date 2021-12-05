@@ -2825,12 +2825,18 @@ aside.mini .menu .items button span
 
 .city_rules .swiper-container .slide
 {
+    display: flex;
     visibility: hidden;
 
     transition: opacity .2s linear, visibility .2s linear;
     pointer-events: none;
 
     opacity: 0;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
 }
 
 .city_rules .swiper-container .slide.visible
@@ -2842,12 +2848,72 @@ aside.mini .menu .items button span
     opacity: 1;
 }
 
-.city_rules .slide img
+
+.city_rules .item
+{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+
+    display: flex;
+
+    letter-spacing: .05em;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+}
+
+.city_rules .item img
 {
     display: block;
 
+    width: 250px;
+    height: 250px;
+    margin-right: 20px;
+
+    border-radius: 50%;
+    background: #ddd;
+}
+
+
+.city_rules .item2
+{
+    margin-left: 215px;
+}
+
+.city_rules .item2 img
+{
+    width: 320px;
+    height: 320px;
+}
+
+
+.city_rules .item3
+{
+    margin-top: -46px;
+    margin-left: 270px;
+}
+
+.city_rules .item3 img
+{
+    width: 300px;
+    height: 300px;
+}
+
+
+.city_rules .item4
+{
+    margin-top: -16px;
+    margin-left: 172px;
+}
+
+
+.city_rules .item .caption
+{
+    width: 225px;
     max-width: 100%;
-    max-height: 534px;
 }
 
 
@@ -4216,7 +4282,7 @@ aside.mini ~ .content .things_to_do .hor_scroll
 
     width: 50%;
     height: 218px;
-    padding: 29px 20px 58px;
+    padding: 20px 20px 58px;
 }
 
 .things_to_do .item .data.min_pad

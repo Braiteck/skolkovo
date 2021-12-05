@@ -185,9 +185,42 @@
     }
 
 
-    .city_rules .slide img
+    .city_rules .item img
     {
-        max-height: 496px;
+        width: 200px;
+        height: 200px;
+    }
+
+
+    .city_rules .item2
+    {
+        margin-left: 60px;
+    }
+
+    .city_rules .item2 img
+    {
+        width: 267px;
+        height: 267px;
+    }
+
+
+    .city_rules .item3
+    {
+        margin-top: 7px;
+        margin-left: 50px;
+    }
+
+    .city_rules .item3 img
+    {
+        width: 260px;
+        height: 260px;
+    }
+
+
+    .city_rules .item4
+    {
+        margin-top: 37px;
+        margin-left: auto;
     }
 
 

@@ -443,10 +443,30 @@
     }
 
 
-    .city_rules .slide img
+    .city_rules .item
     {
-        width: 100%;
-        max-height: auto;
+        width: calc(100% - 40px);
+        margin-left: 20px;
+    }
+
+    .city_rules .item img
+    {
+        width: 150px;
+        height: 150px;
+        margin-right: 20px;
+    }
+
+    .city_rules .item .caption
+    {
+        width: calc(100% - 170px);
+    }
+
+    .city_rules .item1,
+    .city_rules .item2,
+    .city_rules .item3,
+    .city_rules .item4
+    {
+        margin-top: 24px;
     }
 
 

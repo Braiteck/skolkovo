@@ -411,9 +411,54 @@
     }
 
 
-    .city_rules .slide img
+    .city_rules .item img
     {
-        max-height: 328px;
+        width: 140px;
+        height: 140px;
+        margin-right: 15px;
+    }
+
+    .city_rules .item .caption
+    {
+        width: 170px;
+    }
+
+
+    .city_rules .item1
+    {
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+
+    .city_rules .item2
+    {
+        margin-top: 0;
+        margin-left: auto;
+    }
+
+    .city_rules .item2 img
+    {
+        width: 150px;
+        height: 150px;
+    }
+
+
+    .city_rules .item3
+    {
+        margin-top: 26px;
+    }
+
+    .city_rules .item3 img
+    {
+        width: 150px;
+        height: 150px;
+    }
+
+
+    .city_rules .item4
+    {
+        margin-top: 26px;
     }
 
 

@@ -1,0 +1,17 @@
+<svg width="38" height="57" viewBox="0 0 38 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M37 18.5422C37 25.3527 34.2234 29.3805 30.0235 35.4187C26.7874 40.0711 23.149 45.6991 18.9988 54.6011C14.9963 46.0605 11.454 40.7899 8.42624 36.2849C8.309 36.1105 8.19252 35.9372 8.07683 35.7649L7.24664 36.3224L8.07682 35.7649C3.7373 29.3027 1 25.1865 1 18.5422C1 8.87675 9.0357 1 19 1C28.9643 1 37 8.87675 37 18.5422Z" fill="white" stroke="#D9DDDE" stroke-width="2"/>
+<g opacity="0.6">
+<path d="M7 12L13 7.5L31 12" stroke="#666666"/>
+<path d="M15 30L11 26" stroke="#666666" stroke-linejoin="bevel"/>
+<path d="M15 26L11 22" stroke="#666666" stroke-linejoin="bevel"/>
+<path d="M15 22L11 18" stroke="#666666" stroke-linejoin="bevel"/>
+<path d="M15 18L11 14H15" stroke="#666666" stroke-linejoin="bevel"/>
+<path d="M11 12L13 8L15 12V30H11V12Z" stroke="#666666" stroke-linejoin="round"/>
+<path d="M7 12H31V14H7V12Z" stroke="#666666"/>
+<path d="M25.5 14V15.5M25.5 20V17.5" stroke="#666666" stroke-linejoin="bevel"/>
+<rect x="18" y="25" width="13" height="5" stroke="#666666"/>
+<path d="M18 27.5H31" stroke="#666666" stroke-linejoin="bevel"/>
+<rect x="21" y="20" width="9" height="2" stroke="#666666"/>
+<circle cx="25.5" cy="16.5" r="1" stroke="#666666"/>
+</g>
+</svg>

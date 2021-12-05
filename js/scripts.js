@@ -476,6 +476,16 @@ $(() => {
 	})
 
 
+	// Календарь мероприятий
+	$('.events .next_link .btn').click(e => {
+		e.preventDefault()
+
+		let horScroll = document.querySelector('.events .hor_scroll')
+
+		horScroll.scrollBy({ left: $('.events .hor_scroll .item').width(), top: 0, behavior: 'smooth' })
+	})
+
+
 	// Анимация стрелки
 	animations = true
 	arrowShow()

@@ -109,6 +109,19 @@
     }
 
 
+    .city_rules .item1
+    {
+        margin-top: 10px;
+    }
+
+    .city_rules .item2,
+    .city_rules .item3,
+    .city_rules .item4
+    {
+        margin-top: 30px;
+    }
+
+
 
     /*-------------------
         Contacts info
