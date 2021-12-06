@@ -4552,6 +4552,21 @@ aside.mini ~ .content .things_to_do .hor_scroll
 
 
 
+/*------------
+    Events
+------------*/
+.events .item .data
+{
+    width: 61.35%;
+}
+
+.events .item .thumb
+{
+    width: 38.65%;
+}
+
+
+
 /*----------------
     Event info
 ----------------*/
