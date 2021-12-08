@@ -1,0 +1,17 @@
+<svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="21.5" cy="12.5" r="1.5" stroke="currentColor"/>
+<circle cx="4.5" cy="12.5" r="1.5" stroke="currentColor"/>
+<path d="M6 12.5L20 12.5" stroke="currentColor"/>
+<circle r="1.5" transform="matrix(1 0 0 -1 23.5 18.5)" stroke="currentColor"/>
+<circle r="1.5" transform="matrix(1 0 0 -1 2.5 18.5)" stroke="currentColor"/>
+<path d="M4 18.5H6.5C7.32843 18.5 8 17.8284 8 17V17C8 16.1716 8.67157 15.5 9.5 15.5L16.5 15.5C17.3284 15.5 18 16.1716 18 17V17C18 17.8284 18.6716 18.5 19.5 18.5H22" stroke="currentColor"/>
+<circle cx="23.5" cy="6.5" r="1.5" stroke="currentColor"/>
+<circle cx="2.5" cy="6.5" r="1.5" stroke="currentColor"/>
+<path d="M4 6.5L6.5 6.5C7.32843 6.5 8 7.17157 8 8V8C8 8.82843 8.67157 9.5 9.5 9.5L16.5 9.5C17.3284 9.5 18 8.82843 18 8V8C18 7.17157 18.6716 6.5 19.5 6.5L22 6.5" stroke="currentColor"/>
+<circle r="1.5" transform="matrix(1 0 0 -1 20.5 22.5)" stroke="currentColor"/>
+<circle r="1.5" transform="matrix(1 0 0 -1 5.5 22.5)" stroke="currentColor"/>
+<path d="M7 22.5L7.76393 22.5C8.52148 22.5 9.214 22.072 9.55279 21.3944L10.4472 19.6056C10.786 18.928 11.4785 18.5 12.2361 18.5H13.7639C14.5215 18.5 15.214 18.928 15.5528 19.6056L16.4472 21.3944C16.786 22.072 17.4785 22.5 18.2361 22.5H19" stroke="currentColor"/>
+<circle cx="20.5" cy="2.5" r="1.5" stroke="currentColor"/>
+<circle cx="5.5" cy="2.5" r="1.5" stroke="currentColor"/>
+<path d="M7 2.5L7.76393 2.5C8.52148 2.5 9.214 2.928 9.55279 3.60557L10.4472 5.39443C10.786 6.072 11.4785 6.5 12.2361 6.5H13.7639C14.5215 6.5 15.214 6.072 15.5528 5.39443L16.4472 3.60557C16.786 2.928 17.4785 2.5 18.2361 2.5L19 2.5" stroke="currentColor"/>
+</svg>
