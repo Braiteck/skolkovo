@@ -287,49 +287,49 @@ $(() => {
 
 
 	// Страница маршрута
-	// if ($('.route_info .swiper-container').length) {
-	// 	routeSlider = new Swiper('.route_info .swiper-container', {
-	// 		loop: false,
-	// 		speed: 750,
-	// 		watchSlidesVisibility: true,
-	// 		slideActiveClass: 'active',
-	// 		slideVisibleClass: 'visible',
-	// 		spaceBetween: 58,
-	// 		slidesPerView: 1,
-	// 		navigation: {
-	// 			nextEl: '.route_info-swiper-button-next',
-	// 			prevEl: '.route_info-swiper-button-prev'
-	// 		},
-	// 		on: {
-	// 			init: swiper => {
-	// 				let parent = $(swiper.$el).closest('.route_info'),
-	// 					currentIndex,
-	// 					totalIndex
+	if ($('.route_info .swiper-container').length) {
+		routeSlider = new Swiper('.route_info .swiper-container', {
+			loop: false,
+			speed: 750,
+			watchSlidesVisibility: true,
+			slideActiveClass: 'active',
+			slideVisibleClass: 'visible',
+			spaceBetween: 58,
+			slidesPerView: 1,
+			navigation: {
+				nextEl: '.route_info-swiper-button-next',
+				prevEl: '.route_info-swiper-button-prev'
+			},
+			on: {
+				init: swiper => {
+					let parent = $(swiper.$el).closest('.route_info'),
+						currentIndex,
+						totalIndex
 
-	// 				(swiper.activeIndex + 1) < 10
-	// 					? currentIndex = '0' + (swiper.activeIndex + 1)
-	// 					: currentIndex = swiper.activeIndex + 1
+					(swiper.activeIndex + 1) < 10
+						? currentIndex = '0' + (swiper.activeIndex + 1)
+						: currentIndex = swiper.activeIndex + 1
 
-	// 				swiper.slides.length < 10
-	// 					? totalIndex = '0' + swiper.slides.length
-	// 					: totalIndex = swiper.slides.length
+					swiper.slides.length < 10
+						? totalIndex = '0' + swiper.slides.length
+						: totalIndex = swiper.slides.length
 
-	// 				parent.find('.count .current').text(currentIndex)
-	// 				parent.find('.count .total').text(totalIndex)
-	// 			},
-	// 			slideChange: swiper => {
-	// 				let parent = $(swiper.$el).closest('.route_info'),
-	// 					currentIndex
+					parent.find('.count .current').text(currentIndex)
+					parent.find('.count .total').text(totalIndex)
+				},
+				slideChange: swiper => {
+					let parent = $(swiper.$el).closest('.route_info'),
+						currentIndex
 
-	// 				(swiper.activeIndex + 1) < 10
-	// 					? currentIndex = '0' + (swiper.activeIndex + 1)
-	// 					: currentIndex = swiper.activeIndex + 1
+					(swiper.activeIndex + 1) < 10
+						? currentIndex = '0' + (swiper.activeIndex + 1)
+						: currentIndex = swiper.activeIndex + 1
 
-	// 				parent.find('.count .current').text(currentIndex)
-	// 			}
-	// 		}
-	// 	})
-	// }
+					parent.find('.count .current').text(currentIndex)
+				}
+			}
+		})
+	}
 
 
 	// Объект

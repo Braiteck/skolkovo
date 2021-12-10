@@ -831,24 +831,24 @@
 
     .route_info .step .number
     {
-        font-size: 100px;
-        line-height: 100px;
+        font-size: 92px;
+        line-height: 100%;
 
-        margin-left: -24px;
+        width: 88px;
+        margin-left: -16px;
     }
 
     .route_info .step .name
     {
-        font-size: 20px;
+        font-size: 18px;
         line-height: 22px;
 
-        width: calc(100% - 64px);
-        margin-top: 8px;
+        max-width: calc(100% - 84px);
     }
 
     .route_info .step .icon
     {
-        margin-top: -12px;
+        margin-top: -8px;
     }
 
 

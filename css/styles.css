@@ -4871,7 +4871,7 @@ aside.mini ~ .content .things_to_do .hor_scroll
     font-size: 120px;
     line-height: 146px;
 
-    width: 100px;
+    width: 112px;
 
     text-align: center;
     text-transform: uppercase;
@@ -4885,8 +4885,9 @@ aside.mini ~ .content .things_to_do .hor_scroll
     display: -webkit-box;
     overflow: hidden;
 
-    max-width: calc(100% - 100px);
-    margin-top: 20px;
+    max-width: calc(100% - 132px);
+    margin-top: 24px;
+    margin-left: auto;
 
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;

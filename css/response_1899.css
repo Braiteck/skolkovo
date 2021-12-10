@@ -492,6 +492,23 @@
     }
 
 
+    .route_info .step .number
+    {
+        font-size: 108px;
+        line-height: 132px;
+
+        width: 100px;
+    }
+
+    .route_info .step .name
+    {
+        font-size: 26px;
+        line-height: 32px;
+
+        max-width: calc(100% - 116px);
+    }
+
+
     .route_info .map
     {
         height: 333px;
