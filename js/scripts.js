@@ -477,12 +477,12 @@ $(() => {
 
 
 	// Календарь мероприятий
-	$('.events .next_link .btn').click(e => {
+	$('.item_scroll .next_link .btn').click(e => {
 		e.preventDefault()
 
-		let horScroll = document.querySelector('.events .hor_scroll')
+		let horScroll = document.querySelector('.hor_scroll')
 
-		horScroll.scrollBy({ left: $('.events .hor_scroll .item').width(), top: 0, behavior: 'smooth' })
+		horScroll.scrollBy({ left: $('.hor_scroll .item').width(), top: 0, behavior: 'smooth' })
 	})
 
 
