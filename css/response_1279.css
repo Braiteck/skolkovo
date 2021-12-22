@@ -188,13 +188,13 @@
 
     header .menu .item + .item
     {
-        margin-left: 32px;
+        margin-left: 20px;
     }
 
     header .menu .item > a
     {
-        font-size: 16px;
-        line-height: 20px;
+        font-size: 15px;
+        line-height: 21px;
 
         height: 40px;
     }
@@ -211,7 +211,7 @@
 
     header .menu_btn
     {
-        margin-left: 40px;
+        margin-left: 24px;
     }
 
 

@@ -66,9 +66,15 @@
     }
 
 
+    header.bg_white .logo
+    {
+        width: 140px;
+    }
+
+
     header .menu .item + .item
     {
-        margin-left: 52px;
+        margin-left: 40px;
     }
 
 

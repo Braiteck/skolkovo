@@ -56,9 +56,15 @@
     /*------------
         Header
     ------------*/
+    header.bg_white .logo
+    {
+        width: 200px;
+    }
+
+
     header .menu .item + .item
     {
-        margin-left: 85px;
+        margin-left: 64px;
     }
 
 
