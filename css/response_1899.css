@@ -511,7 +511,7 @@
         font-size: 26px;
         line-height: 32px;
 
-        max-width: calc(100% - 116px);
+        width: calc(100% - 116px);
     }
 
 

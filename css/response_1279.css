@@ -843,7 +843,7 @@
         font-size: 18px;
         line-height: 22px;
 
-        max-width: calc(100% - 84px);
+        width: calc(100% - 84px);
     }
 
     .route_info .step .icon

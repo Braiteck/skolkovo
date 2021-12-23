@@ -4836,7 +4836,7 @@ aside.mini ~ .content .things_to_do .hor_scroll
     display: -webkit-box;
     overflow: hidden;
 
-    max-width: calc(100% - 132px);
+    width: calc(100% - 132px);
     margin-top: 24px;
     margin-left: auto;
 
@@ -4904,7 +4904,7 @@ aside.mini ~ .content .things_to_do .hor_scroll
 
     display: flex;
 
-    width: 194px;
+    width: 204px;
     min-height: 34px;
     margin-right: auto;
     margin-left: auto;

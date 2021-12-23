@@ -366,7 +366,7 @@
 
     .route_info .step .name
     {
-        max-width: calc(100% - 100px);
+        width: calc(100% - 100px);
 
         -webkit-line-clamp: 2;
     }
