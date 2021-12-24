@@ -64,13 +64,18 @@
 
     header .menu .item + .item
     {
-        margin-left: 64px;
+        margin-left: 60px;
+    }
+
+    header .menu .item > a
+    {
+        font-size: 17px;
     }
 
 
     header .menu_btn
     {
-        margin-left: 110px;
+        margin-left: 60px;
     }
 
 
